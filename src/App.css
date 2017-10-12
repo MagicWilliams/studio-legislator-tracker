@@ -32,6 +32,7 @@
 
 .repHeader {
   margin-top: 0px;
+  font-weight: bold;
 }
 
 @keyframes App-logo-spin {
