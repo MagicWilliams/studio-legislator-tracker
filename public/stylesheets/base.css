@@ -1,0 +1,45 @@
+@font-face {
+ 	font-family: "Helvetica Neue";
+ 	src: url("../fonts/HelveticaNeue-Medium.otf") format("otf"),
+}
+@font-face {
+ 	font-family: "Helvetica Neue";
+ 	font-weight: bold; 
+ 	src: url("../fonts/HelveticaNeue-Heavy.otf") format("otf"),
+}
+@font-face {
+ 	font-family: "Helvetica Neue";
+ 	font-weight: lighter; 
+ 	src: url("../fonts/HelveticaNeue-Light.otf") format("otf"),
+}
+
+@font-face {
+ 	font-family: "Helvetica Neue";
+ 	font-style: italic;
+ 	src: url("../fonts/HelveticaNeue-MediumItalic.otf") format("otf"),
+}
+
+@font-face {
+ 	font-family: "Helvetica Neue";
+ 	font-style: italic;
+ 	font-weight: bold;
+ 	src: url("../fonts/HelveticaNeue-HeavyItalic.otf") format("otf"),
+}
+@font-face {
+ 	font-family: "Helvetica Neue";
+ 	font-weight: lighter;
+ 	font-style: italic;
+ 	src: url("../fonts/HelveticaNeue-LightItalic.otf") format("otf"),
+}
+
+// Define all project-wide variables to be used here.
+:root {
+	--text: #000014;
+	--red: #A31531;
+	--blue: #3D2DFF;
+}
+
+* {
+	font-family: "Helvetica Neue";
+	font-weight: bold;
+}
