@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -20,6 +20,18 @@
 
 .App-intro {
   font-size: large;
+}
+
+.image {
+  width: 100%;
+}
+
+.bio {
+  margin-left: 20px;
+}
+
+.repHeader {
+  margin-top: 0px;
 }
 
 @keyframes App-logo-spin {
