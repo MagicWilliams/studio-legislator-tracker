@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import './App.css';
+import './Card.css';
 
 class Card extends Component {
   constructor(props) {
     super(props);
     this.state = {
       representative: {
-        name: "peter",
+        name: "Peter Roskam",
         img: "/img/peter.jpg",
-        party: " republican",
+        party: " Republican",
         state: " IL",
         district: " 6th district",
-        quote: "However well-intentioned, Obamacare failed the American people. Illinois families are paying more money for fewer and fewer benefits. Insurance premiums have increased by an average of over 21%. Last year, the Land of Lincoln co-op became the 16th in the country to collapse, leaving 49,000 Illinoisans without any healthcare coverage at all and taxpayers on for hook for over $160 million. We’re committed to an open and transparent process as we debate this legislation.",
+        quote: " \"However well-intentioned, Obamacare failed the American people. Illinois families are paying more money for fewer and fewer benefits. Insurance premiums have increased by an average of over 21%. Last year, the Land of Lincoln co-op became the 16th in the country to collapse, leaving 49,000 Illinoisans without any healthcare coverage at all and taxpayers on for hook for over $160 million. We’re committed to an open and transparent process as we debate this legislation.\"",
         quoteSource: "Press release, March 7, 2017",
         quoteLink: "https://roskam.house.gov/HealthCare",
         stance: "in-favor",
@@ -23,7 +23,7 @@ class Card extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="Card">
         <Grid fluid>
             <Row>
               <Col xs={3} smOffset={1} sm={2} mdOffset={2} md={1} lgOffset={3} lg={1}>
@@ -38,8 +38,8 @@ class Card extends Component {
                 </h4>
 
                 <p> {this.state.representative.quote} </p>
-                <p> {this.state.representative.quoteSource} </p>
-                <p> {this.state.representative.quoteLink} </p>
+                <p className="source"> {this.state.representative.quoteSource} </p>
+                <p className="link"> {this.state.representative.quoteLink} </p>
               </Col>
             </Row>
         </Grid>
