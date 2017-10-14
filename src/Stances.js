@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Card from './Card.js'
+import Stance from './Stance.js'
 import './Stance.css';
 
-class Stance extends Component {
+class Stances extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,15 +15,12 @@ class Stance extends Component {
   render() {
     return (
       <div>
-      <div className="header">
-      <h3 className="stanceHeader"> {this.props.st} </h3>
+      <Stance st="IN FAVOR"/>
+      <Stance st="OPPOSED" />
       </div>
-      <div>
-      <Card />
-      </div>
-      </div>
+
     );
   }
 }
 
-export default Stance;
+export default Stances;
