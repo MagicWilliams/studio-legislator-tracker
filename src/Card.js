@@ -7,7 +7,6 @@ class Card extends Component {
     super(props);
     this.state = {
       representative: {
-        name: "Peter Roskam",
         img: "/img/peter.jpg",
         party: " Republican",
         state: " IL",
@@ -31,7 +30,7 @@ class Card extends Component {
               </Col>
               <Col xs={8} sm={8} md={6} lg={5} className="bio">
                 <h4 className="repHeader">
-                  {this.state.representative.name},
+                  {this.props.name},
                   {this.state.representative.party},
                   {this.state.representative.state},
                   {this.state.representative.district}

@@ -16,7 +16,11 @@ class Stances extends Component {
     return (
       <div>
       <Stance st="IN FAVOR"/>
+      <Card name="Peter" 
+
+      />
       <Stance st="OPPOSED" />
+      <Stance st="NO STATEMENT" />
       </div>
 
     );

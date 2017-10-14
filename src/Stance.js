@@ -17,9 +17,6 @@ class Stance extends Component {
       <div className="header">
       <h3 className="stanceHeader"> {this.props.st} </h3>
       </div>
-      <div>
-      <Card />
-      </div>
       </div>
     );
   }
