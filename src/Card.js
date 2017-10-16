@@ -16,7 +16,7 @@ class Card extends Component {
         <Grid fluid>
             <Row>
               <Col xs={3} smOffset={1} sm={2} mdOffset={2} md={1} lgOffset={3} lg={1}>
-                <img alt="peter" src={this.props.img} className="image"/>
+                <img alt="img" src={this.props.img} className="image"/>
               </Col>
               <Col xs={8} sm={8} md={6} lg={5} className="bio">
                 <h4 className="repHeader">
