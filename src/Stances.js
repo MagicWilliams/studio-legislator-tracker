@@ -64,6 +64,71 @@ class Stances extends Component {
           stance: "in-favor"
         },
     ];
+
+    this.state.data2 =
+        [
+        {
+            name: "Tammy Duckworth",
+            img: "/img/tammy.jpg",
+            party: " Democrat",
+            state: " IL",
+            quote: "I'm frustrated that the best plan they came up with would result in working people receiving less coverage and paying more for it.",
+            quoteSource: "Email statement, March 10, 2017",
+            stance: "opposed"
+        },
+        {
+          name: "Richard Durbin",
+          img: "/img/richard.jpg",
+          party: " Democrat",
+          state: " IL",
+          district: " Minority Whip",
+          quote: "With this reckless bill, Republicans have shown us that the only thing they are serious about is cutting taxes for the wealthy, increasing out-of-pocket costs for middle-class families and seniors, and throwing people off their health insurance plans.",
+          quoteSource: "Email statement, March 7, 2017",
+          stance: "opposed"
+        },
+        {
+          name: "Robin Kelly",
+          img: "/img/robin.jpg",
+          party: " Democrat",
+          state: " IL",
+          district: " 2nd District",
+          quote: "The Affordable Care Act has left behind a legacy of progress. It is working and is more popular than ever. Let's fix any issues instead of passing this bill that will make Americans sick again.",
+          quoteSource: "Press release, March 7, 2017",
+          quoteLink: "http://robinkelly.house.gov/media-center/press-releases/rep-kelly-releases-a-statement-on-republicans-aca-repeal-bill",
+          stance: "opposed"
+        },
+    ];
+
+    this.state.data3 =
+        [
+        {
+            name: "Bobby Rush",
+            img: "/img/bobby.jpg",
+            party: " Democrat",
+            state: " IL",
+            district: " 1st District",
+            quote: "Statement not collected.",
+            stance: "no-statement"
+        },
+        {
+          name: "Dan Lipinski",
+          img: "/img/dan.jpg",
+          party: " Democrat",
+          state: " IL",
+          district: " 3rd District",
+          quote: "Statement not collected.",
+          stance: "no-statement"
+        },
+        {
+          name: "Danny K. Davis",
+          img: "/img/danny.jpg",
+          party: " Democrat",
+          state: " IL",
+          district: " 7th District",
+          quote: "Statement not collected.",
+          stance: "no-statement"
+        },
+    ];
   }
 
   render() {
@@ -91,7 +156,38 @@ class Stances extends Component {
 
 
       <Stance st="OPPOSED" />
+
+      {this.state.data2.map(val =>
+      <Card
+      img={val.img}
+      name={val.name}
+      party={val.party}
+      state={val.state}
+      district={val.district}
+      quote={val.quote}
+      quoteSource={val.quoteSource}
+      quoteLink={val.quoteLink}
+      stance={val.stance}
+       />
+      )}
+
+
       <Stance st="NO STATEMENT" />
+
+      {this.state.data3.map(val =>
+      <Card
+      img={val.img}
+      name={val.name}
+      party={val.party}
+      state={val.state}
+      district={val.district}
+      quote={val.quote}
+      quoteSource={val.quoteSource}
+      quoteLink={val.quoteLink}
+      stance={val.stance}
+       />
+      )}
+
       </div>
 
     );
