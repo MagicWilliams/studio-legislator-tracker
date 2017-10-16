@@ -42,8 +42,27 @@ class Stances extends Component {
             stance: "in-favor"
         },
         {
-          name: "test"
-        }
+          name: "Rodney Davis",
+          img: "/img/rodney.jpg",
+          party: " Republican",
+          state: " IL",
+          district: " 13th District",
+          quote: "Some members, from both parties, may not want to face the mess that Obamacare has created and what is required to clean it up, but we made a promise to the American people to responsibly fix our health care system and that’s what this bill does.",
+          quoteSource: "Press release, March 7, 2017",
+          quoteLink: "http://rodneydavis.house.gov/news/documentsingle.aspx?DocumentID=399253",
+          stance: "in-favor"
+        },
+        {
+          name: "John Shimkus",
+          img: "/img/john.jpg",
+          party: " Republican",
+          state: " IL",
+          district: " 15th District",
+          quote: "This is the relief my constituents have demanded. The American Health Care Act offers American families more options, lower costs and the flexibility to choose a plan that fits their unique needs, not Washington’s one-size-fits-all mandates",
+          quoteSource: "Press release, March 7, 2017",
+          quoteLink: "https://shimkus.house.gov/media-center/press-releases/house-unveils-bill-to-repeal-and-replace-obamacare",
+          stance: "in-favor"
+        },
     ];
   }
 
