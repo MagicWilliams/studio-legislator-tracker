@@ -1,0 +1,21 @@
+.Card {
+  text-align: left;
+  padding: 20px;
+}
+
+.bio {
+  margin-left: 20px;
+}
+
+.repHeader {
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+.source {
+  color: gray;
+}
+
+.link {
+  color: crimson;
+}
