@@ -1,0 +1,21 @@
+.Banner {
+	height: 400px;
+	background-color: #F5F5F5;
+	width: 100%;
+	text-align: center
+}
+
+.titleBar {
+	background-color: var(--bkg);
+	height: 150px;
+	width: 100%;
+}
+
+.title {
+	padding-top: 25px;
+	color: var(--text-bright);
+}
+
+.bannerBody {
+	height: 200px;
+}

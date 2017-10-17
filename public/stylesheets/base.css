@@ -33,11 +33,6 @@
 }
 
 // Define all project-wide variables to be used here.
-:root {
-	--text: #000014;
-	--red: #A31531;
-	--blue: #3D2DFF;
-}
 
 * {
 	font-family: "Helvetica Neue";
