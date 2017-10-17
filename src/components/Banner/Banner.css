@@ -1,5 +1,5 @@
 .Banner {
-	height: 400px;
+	height: 550px;
 	background-color: #F5F5F5;
 	width: 100%;
 	text-align: center
@@ -11,6 +11,11 @@
 	width: 100%;
 }
 
+.titleBar h5 {
+	font-style: italic;
+	color: white;
+}
+
 .title {
 	padding-top: 25px;
 	color: var(--text-bright);
@@ -18,4 +23,33 @@
 
 .bannerBody {
 	height: 200px;
+	margin-top: 50px;
 }
+
+
+.legend {
+	display: inline-flex;
+	margin-left: 46vw;
+	margin-top: 20px;
+}
+
+
+
+.redSq, .blueSq {
+	height: 20px;
+	width: 20px;
+	border: 2px solid black;
+}
+
+.redSq p, .blueSq p {
+	margin-right: 10px;
+}
+
+.redSq {
+	background-color: red;
+}
+
+.blueSq {
+	background-color: blue;
+}
+

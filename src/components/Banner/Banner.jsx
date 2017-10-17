@@ -11,7 +11,8 @@ class Banner extends Component {
         <Grid className="Banner">
           <Row>
             <Col xs={12} className="titleBar">
-              <h1 className="title"> See Where Members Of Congress Stand On New Health Care Bill </h1>
+              <h1 className="title"> See Where Members of Congress Stand on New Health Care Bill </h1>
+              <h5> Created by your average ordinary college kids </h5>
             </Col>
           </Row>
           <Row>
@@ -19,6 +20,14 @@ class Banner extends Component {
               <h3> 464 of 535 voting Congress members on the record as of March 24, 2017 </h3>
             </Col>
             <VotingTable />
+          </Row>
+          <Row>
+            <Col xs={12} className="legend">
+              <div className="blueSq">
+              </div> <p> Dem </p>
+              <div className="redSq">
+              </div> <p> Rep </p>
+            </Col>
           </Row>
         </Grid>
       </div>
