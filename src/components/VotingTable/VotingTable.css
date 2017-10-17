@@ -13,16 +13,16 @@
 }
 
 .demVotes {
-	color: #5159FF;
+	color: var(--blue);
 }
 
 .republicanVotes {
-	color: #FF5953;
+	color: var(--red);
 }
 
+/* GENERAL TABLE STYLING */
+
 table { 
-  color: #333;
-  font-family: Helvetica, Arial, sans-serif;
   width: 640px;
   /* Table reset stuff */
   border-collapse: collapse; border-spacing: 0; 
@@ -32,25 +32,21 @@ td, th {
 	border: 0 none; height: 30px; 
 }
 
+td { 
+	text-align: center; 
+}
+
 th {
 	color: #000; 
 	font-weight: bold;
 	height: 40px;
 }
 		
-td { 
-	text-align: center; 
-}
 
 /* Zebra Stripe Rows */
 		
 tr {
-	background-color: transparent;
 	border-bottom: 2px solid black;
-}
-
-td[aria-label="Senate"] {
-	border-bottom: none;
 }
 
 /* First-child blank cells! */

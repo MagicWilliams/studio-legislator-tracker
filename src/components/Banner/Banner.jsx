@@ -12,7 +12,7 @@ class Banner extends Component {
           <Row>
             <Col xs={12} className="titleBar">
               <h1 className="title"> See Where Members of Congress Stand on New Health Care Bill </h1>
-              <h5> Created by your average ordinary college kids </h5>
+              <h5 className = "subtitle"> Created by your average ordinary college kids </h5>
             </Col>
           </Row>
           <Row>
