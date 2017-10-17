@@ -28,8 +28,8 @@ class Stances extends Component {
 
   getData(){
     console.log("getData");
-    this.state.data1 =
-        [
+    this.setState({
+      data1: [
         {
             name: "Peter Roskam",
             img: "/img/peter.jpg",
@@ -63,10 +63,8 @@ class Stances extends Component {
           quoteLink: "https://shimkus.house.gov/media-center/press-releases/house-unveils-bill-to-repeal-and-replace-obamacare",
           stance: "in-favor"
         },
-    ];
-
-    this.state.data2 =
-        [
+      ],
+      data2: [
         {
             name: "Tammy Duckworth",
             img: "/img/tammy.jpg",
@@ -97,9 +95,8 @@ class Stances extends Component {
           quoteLink: "http://robinkelly.house.gov/media-center/press-releases/rep-kelly-releases-a-statement-on-republicans-aca-repeal-bill",
           stance: "opposed"
         },
-    ];
-
-    this.state.data3 =
+      ],
+      data3:
         [
         {
             name: "Bobby Rush",
@@ -128,7 +125,8 @@ class Stances extends Component {
           quote: "Statement not collected.",
           stance: "no-statement"
         },
-    ];
+      ],
+    })
   }
 
   render() {
@@ -138,56 +136,55 @@ class Stances extends Component {
     return (
       <div>
 
-      <Stance st="IN FAVOR"/>
-
-      {this.state.data1.map(val =>
-      <Card
-      img={val.img}
-      name={val.name}
-      party={val.party}
-      state={val.state}
-      district={val.district}
-      quote={val.quote}
-      quoteSource={val.quoteSource}
-      quoteLink={val.quoteLink}
-      stance={val.stance}
-       />
-      )}
-
-
-      <Stance st="OPPOSED" />
-
-      {this.state.data2.map(val =>
-      <Card
-      img={val.img}
-      name={val.name}
-      party={val.party}
-      state={val.state}
-      district={val.district}
-      quote={val.quote}
-      quoteSource={val.quoteSource}
-      quoteLink={val.quoteLink}
-      stance={val.stance}
-       />
-      )}
+        <Stance st="IN FAVOR">
+          {this.state.data1.map(val =>
+          <Card
+          img={val.img}
+          name={val.name}
+          party={val.party}
+          state={val.state}
+          district={val.district}
+          quote={val.quote}
+          quoteSource={val.quoteSource}
+          quoteLink={val.quoteLink}
+          stance={val.stance}
+           />
+          )}
+        </Stance>
 
 
-      <Stance st="NO STATEMENT" />
+        <Stance st="OPPOSED">
+          {this.state.data2.map(val =>
+          <Card
+          img={val.img}
+          name={val.name}
+          party={val.party}
+          state={val.state}
+          district={val.district}
+          quote={val.quote}
+          quoteSource={val.quoteSource}
+          quoteLink={val.quoteLink}
+          stance={val.stance}
+           />
+          )}
+        </Stance>
 
-      {this.state.data3.map(val =>
-      <Card
-      img={val.img}
-      name={val.name}
-      party={val.party}
-      state={val.state}
-      district={val.district}
-      quote={val.quote}
-      quoteSource={val.quoteSource}
-      quoteLink={val.quoteLink}
-      stance={val.stance}
-       />
-      )}
 
+        <Stance st="NO STATEMENT">
+          {this.state.data3.map(val =>
+            <Card
+              img={val.img}
+              name={val.name}
+              party={val.party}
+              state={val.state}
+              district={val.district}
+              quote={val.quote}
+              quoteSource={val.quoteSource}
+              quoteLink={val.quoteLink}
+              stance={val.stance}
+             />
+          )}
+        </Stance>
       </div>
 
     );

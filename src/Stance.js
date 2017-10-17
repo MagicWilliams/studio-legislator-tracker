@@ -14,9 +14,10 @@ class Stance extends Component {
   render() {
     return (
       <div>
-      <div className="header">
-      <h3 className="stanceHeader"> {this.props.st} </h3>
-      </div>
+        <div className="header">
+          <h3 className="stanceHeader"> {this.props.st} </h3>
+        </div>
+        {this.props.children}
       </div>
     );
   }
