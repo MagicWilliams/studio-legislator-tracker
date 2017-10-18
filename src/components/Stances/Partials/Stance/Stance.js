@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import Card from './Card.js'
 import './Stance.css';
 
 class Stance extends Component {
