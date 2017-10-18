@@ -1,0 +1,69 @@
+.tableContainer {
+	margin: 0 auto;
+	margin-top: -125px;
+}
+
+.tableContainer h3 {
+	padding-right: 20px;
+}
+
+.demVotes, .republicanVotes {
+	font-weight: bold;
+	padding-right: 10px; 
+}
+
+.demVotes {
+	color: var(--blue);
+}
+
+.republicanVotes {
+	color: var(--red);
+}
+
+/* GENERAL TABLE STYLING */
+
+table { 
+  width: 640px;
+  /* Table reset stuff */
+  border-collapse: collapse; border-spacing: 0; 
+}
+		
+td, th {  
+	border: 0 none; height: 30px; 
+}
+
+td { 
+	text-align: center; 
+}
+
+th {
+	color: #000; 
+	font-weight: bold;
+	height: 40px;
+}
+		
+
+/* Zebra Stripe Rows */
+		
+tr {
+	border-bottom: 2px solid black;
+}
+
+/* First-child blank cells! */
+tr td:first-child, tr th:first-child { 
+	background: none; 
+	font-weight: bold;
+	font-size: 14px;
+	text-align: right;
+	padding-right: 10px;
+	width: 80px; 
+}
+
+/* Add border-radius to specific cells! */
+tr:first-child th:nth-child(2) { 
+  border-radius: 3px 0 0 0; 
+} 
+
+tr:first-child th:last-child { 
+  border-radius: 0 3px 0 0; 
+}

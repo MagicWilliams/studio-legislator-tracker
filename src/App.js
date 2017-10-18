@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import logo from './logo.svg';
 import './App.css';
-import Card from './Card.js';
+import './global-vars.css';
+import Banner from './components/Banner/Banner';
 import Stances from './Stances.js';
 
 class App extends Component {
 
   render() {
     return (
+      <Banner />
       <Stances />
     );
   }
