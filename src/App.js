@@ -3,14 +3,16 @@ import logo from './logo.svg';
 import './App.css';
 import './global-vars.css';
 import Banner from './components/Banner/Banner';
-import Stances from './Stances.js';
+import Stances from './components/Stances/Stances';
 
 class App extends Component {
 
   render() {
     return (
-      <Banner />
-      <Stances />
+      <div>
+        <Banner />
+        <Stances />
+      </div>
     );
   }
 }

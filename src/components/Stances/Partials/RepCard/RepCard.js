@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import './Card.css';
+import './RepCard.css';
 
 class Card extends Component {
   constructor(props) {
