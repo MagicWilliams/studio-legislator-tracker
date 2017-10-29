@@ -1,0 +1,16 @@
+.sta {
+  padding-left: 40px;
+  padding-top: 10px;
+  color: #909090;
+  /*font-size: 1.17em;*/
+}
+
+.filterbystate {
+  text-align: center;
+  font-size: 1.17em;
+  color: #5C7D8E;
+}
+
+.head {
+  width: 100%
+}

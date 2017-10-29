@@ -42,7 +42,3 @@ class VotingTable extends Component {
 }
 
 export default VotingTable;
-
-
-
-
