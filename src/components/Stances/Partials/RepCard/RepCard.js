@@ -26,6 +26,10 @@ class Card extends Component {
                   {this.props.district}
                 </h4>
 
+                <h4 className="stance">
+                {this.props.stance}
+                </h4>
+
                 <p> {this.props.quote} </p>
                 <p className="source"> {this.props.quoteSource} </p>
                 <p className="link"> {this.props.quoteLink} </p>
