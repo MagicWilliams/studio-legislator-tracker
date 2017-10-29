@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import './global-vars.css';
 import Banner from './components/Banner/Banner';
 import Stances from './components/Stances/Stances';
-import FilterByState from './FilterByState';
+import FilterByState from './components/FilterByState/FilterByState';
 
 class App extends Component {
 
