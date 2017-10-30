@@ -15,7 +15,7 @@ class HeadlineSummary extends Component {
       <div className="HeadlineSummary">
         <Grid fluid>
             <Row>
-              <Col xs={11} xsOffset={1}>
+              <Col xs={12}>
                 <h1> Find Out Where Members of Congress Stood On the Health Care Bill </h1>
 
                 <p>

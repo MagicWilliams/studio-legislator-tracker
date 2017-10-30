@@ -17,7 +17,7 @@
 }
 
 .link {
-  color: crimson;
+  color: var(--crimson);
 }
 
 .image {
