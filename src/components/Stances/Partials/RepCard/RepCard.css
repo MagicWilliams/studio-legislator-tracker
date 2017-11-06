@@ -17,7 +17,7 @@
 }
 
 .link {
-  color: var(--crimson);
+  color: gray;
 }
 
 .image {
@@ -26,4 +26,9 @@
 
 .stance {
   color: crimson;
+}
+
+.phoneNumber {
+  font-weight: bold;
+  color: var(--crimson);
 }

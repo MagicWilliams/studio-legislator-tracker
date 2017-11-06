@@ -39,7 +39,8 @@ class Stances extends Component {
             quote: "However well-intentioned, Obamacare failed the American people. Illinois families are paying more money for fewer and fewer benefits. Insurance premiums have increased by an average of over 21%. Last year, the Land of Lincoln co-op became the 16th in the country to collapse, leaving 49,000 Illinoisans without any healthcare coverage at all and taxpayers on for hook for over $160 million. We’re committed to an open and transparent process as we debate this legislation.",
             quoteSource: "Press release, March 7, 2017",
             quoteLink: "https://roskam.house.gov/HealthCare",
-            stance: "IN FAVOR"
+            stance: "IN FAVOR",
+            phoneNumber: "000-000-0000"
         },
         {
           name: "Rodney Davis",
@@ -50,7 +51,8 @@ class Stances extends Component {
           quote: "Some members, from both parties, may not want to face the mess that Obamacare has created and what is required to clean it up, but we made a promise to the American people to responsibly fix our health care system and that’s what this bill does.",
           quoteSource: "Press release, March 7, 2017",
           quoteLink: "http://rodneydavis.house.gov/news/documentsingle.aspx?DocumentID=399253",
-          stance: "IN FAVOR"
+          stance: "IN FAVOR",
+          phoneNumber: "000-000-0000"
         },
         {
           name: "John Shimkus",
@@ -148,6 +150,7 @@ class Stances extends Component {
           quoteSource={val.quoteSource}
           quoteLink={val.quoteLink}
           stance={val.stance}
+          phoneNumber={val.phoneNumber}
            />
           )}
         </Stance>
