@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import './global-vars.css';
 import Banner from './components/Banner/Banner';
+import Graphs from './components/Graphs/Graphs';
 import Stances from './components/Stances/Stances';
 import SearchBar from './components/partials/SearchBar/SearchBar';
 
@@ -13,7 +14,9 @@ class App extends Component {
     return (
     	<div>
 	        <Banner />
-	        <SearchBar />
+	        <div className="graphContainer">
+	        	<Graphs />
+	        </div>
 	        <Stances />
 	    </div>
     );
