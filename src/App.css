@@ -43,3 +43,8 @@
 .graphContainer {
   padding: 100px;
 }
+
+canvas {
+  padding-bottom: 100px;
+  height: 50%;
+}
