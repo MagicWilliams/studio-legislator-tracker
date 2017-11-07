@@ -1,0 +1,12 @@
+.stancesList {
+  padding-left: 40px;
+  padding-top: 10px;
+  color: var(--gray);
+  /*font-size: 1.17em;*/
+}
+
+.filterByState {
+  text-align: center;
+  font-size: 1.17em;
+  color: var(--teal);
+}

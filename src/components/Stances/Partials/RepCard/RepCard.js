@@ -15,10 +15,7 @@ class Card extends Component {
       <div className="Card">
         <Grid fluid>
             <Row>
-              <Col xs={3} smOffset={1} sm={2} mdOffset={2} md={1} lgOffset={3} lg={1}>
-                <img alt="img" src={this.props.img} className="image"/>
-              </Col>
-              <Col xs={8} sm={8} md={6} lg={5} className="bio">
+              <Col xs={12} className="bio">
                 <h4 className="repHeader">
                   {this.props.name},
                   {this.props.party},
@@ -26,9 +23,14 @@ class Card extends Component {
                   {this.props.district}
                 </h4>
 
+                <h4 className="stance">
+                {this.props.stance}
+                </h4>
+
                 <p> {this.props.quote} </p>
                 <p className="source"> {this.props.quoteSource} </p>
                 <p className="link"> {this.props.quoteLink} </p>
+                <p className="phoneNumber"> {this.props.phoneNumber} </p>
               </Col>
             </Row>
         </Grid>

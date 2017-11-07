@@ -17,9 +17,18 @@
 }
 
 .link {
-  color: crimson;
+  color: gray;
 }
 
 .image {
   width: 100%;
+}
+
+.stance {
+  color: crimson;
+}
+
+.phoneNumber {
+  font-weight: bold;
+  color: var(--crimson);
 }
