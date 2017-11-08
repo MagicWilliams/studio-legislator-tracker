@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import DoughnutGraph from '../DoughnutGraph/DoughnutGraph';
-import classNames from 'classnames/bind';
-import { Grid, Row, Col } from 'react-flexbox-grid';
 import './PartyGraphs.css';
+// import classNames from 'classnames/bind';
+// import { Grid, Row, Col } from 'react-flexbox-grid';
 
 class PartyGraphs extends Component {
   constructor(props) {

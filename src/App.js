@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import './global-vars.css';
 import Banner from './components/Banner/Banner';
 import PartyGraphs from './components/Graphs/PartyGraphs/PartyGraphs';
 import Stances from './components/Stances/Stances';
-import SearchBar from './components/partials/SearchBar/SearchBar';
-
+// import SearchBar from './components/partials/SearchBar/SearchBar';
 
 class App extends Component {
 

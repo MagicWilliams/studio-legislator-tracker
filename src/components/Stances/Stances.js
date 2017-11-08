@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
 import Card from './Partials/RepCard/RepCard';
 import Stance from './Partials/Stance/Stance';
 import './Partials/Stance/Stance.css';
@@ -138,52 +137,46 @@ class Stances extends Component {
 
         <Stance st="IN FAVOR">
           {this.state.data1.map(val =>
-          <Card
-          img={val.img}
-          name={val.name}
-          party={val.party}
-          state={val.state}
-          district={val.district}
-          quote={val.quote}
-          quoteSource={val.quoteSource}
-          quoteLink={val.quoteLink}
-          stance={val.stance}
-           />
-          )}
+          <Card img={val.img}
+            name={val.name}
+            party={val.party}
+            state={val.state}
+            district={val.district}
+            quote={val.quote}
+            quoteSource={val.quoteSource}
+            quoteLink={val.quoteLink}
+            stance={val.stance}
+          /> )}
         </Stance>
-
 
         <Stance st="OPPOSED">
           {this.state.data2.map(val =>
           <Card
-          img={val.img}
-          name={val.name}
-          party={val.party}
-          state={val.state}
-          district={val.district}
-          quote={val.quote}
-          quoteSource={val.quoteSource}
-          quoteLink={val.quoteLink}
-          stance={val.stance}
-           />
-          )}
+            img={val.img}
+            name={val.name}
+            party={val.party}
+            state={val.state}
+            district={val.district}
+            quote={val.quote}
+            quoteSource={val.quoteSource}
+            quoteLink={val.quoteLink}
+            stance={val.stance}
+          /> )}
         </Stance>
-
 
         <Stance st="NO STATEMENT">
           {this.state.data3.map(val =>
-            <Card
-              img={val.img}
-              name={val.name}
-              party={val.party}
-              state={val.state}
-              district={val.district}
-              quote={val.quote}
-              quoteSource={val.quoteSource}
-              quoteLink={val.quoteLink}
-              stance={val.stance}
-             />
-          )}
+          <Card
+            img={val.img}
+            name={val.name}
+            party={val.party}
+            state={val.state}
+            district={val.district}
+            quote={val.quote}
+            quoteSource={val.quoteSource}
+            quoteLink={val.quoteLink}
+            stance={val.stance}
+          /> )}
         </Stance>
       </div>
 

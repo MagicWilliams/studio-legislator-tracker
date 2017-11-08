@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import classNames from 'classnames/bind';
-import { Grid, Row, Col } from 'react-flexbox-grid';
 import './DoughnutGraph.css';
 import { Doughnut } from 'react-chartjs-2';
 

@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import classNames from 'classnames/bind';
-import { Grid, Row, Col } from 'react-flexbox-grid';
 import './VotingTable.css';
 
 class VotingTable extends Component {
