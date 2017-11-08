@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import DoughnutGraph from '../DoughnutGraph/DoughnutGraph';
 import './PartyGraphs.css';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+
 // import classNames from 'classnames/bind';
-// import { Grid, Row, Col } from 'react-flexbox-grid';
 
 class PartyGraphs extends Component {
   constructor(props) {
@@ -15,9 +16,15 @@ class PartyGraphs extends Component {
   render() {
     return (
       <div className="graphContainer">
-        <DoughnutGraph className="graph" demCount={this.state.forCount} repCount={this.state.againstCount}/>
-        <DoughnutGraph demCount={36} repCount={214}/>
-        <DoughnutGraph demCount={206} repCount={299}/>
+        <Grid>
+          <Row>
+            <Col xs={12} md={6} mdOffset={3}>
+              <DoughnutGraph className="graph" demCount={this.state.forCount} repCount={this.state.againstCount}/>
+              <DoughnutGraph demCount={36} repCount={214}/>
+              <DoughnutGraph demCount={206} repCount={299}/>
+            </Col>
+          </Row>
+        </Grid>
       </div>
     );
   }
