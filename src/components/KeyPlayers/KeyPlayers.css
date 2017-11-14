@@ -1,0 +1,30 @@
+.scrollContainer {
+  position: relative;
+  overflow-x: scroll;
+  height: 100%;
+  display: flex;
+}
+
+.thumbnail {
+  border: 1px solid black;
+  width: 15vh;
+  padding: 0px 15px;
+}
+
+.thumbnailImage {
+  position: relative;
+  height: 15vh;
+  border-radius: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5px;
+}
+
+.thumbnailBio {
+  text-align: center;
+  margin: 2px 0px;
+}
+
+.ScrollHeader {
+  text-align: center;
+}

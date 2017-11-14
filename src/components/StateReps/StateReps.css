@@ -1,0 +1,13 @@
+.stanceTitle {
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+.stanceFillers {
+  text-align: center;
+}
+
+.stanceFillers:hover {
+  cursor: pointer;
+}
