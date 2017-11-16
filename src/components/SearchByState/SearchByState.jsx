@@ -8,7 +8,8 @@ class SearchByState extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showing: props.inFavor,
+      representatives: props.representatives,
+      currState: "Illinois",
       senators: [
         {
           name: "Durrell Gill",
@@ -53,6 +54,7 @@ class SearchByState extends Component {
               </div>
             </Col>
           </Row>
+
         </Grid>
 
         <StateReps representatives={this.props.representatives}/>
