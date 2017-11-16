@@ -62,7 +62,7 @@ class SearchByState extends Component {
 
         {/* <SelectState updateStateSelection={this.updateStateSelection} /> */}
 
-        <StateReps representatives={this.state.representatives.filter(this.isState)}/>
+        <StateReps currState={this.state.currState} representatives={this.state.representatives.filter(this.isState)}/>
 
       </div>
     );

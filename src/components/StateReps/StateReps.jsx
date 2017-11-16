@@ -7,14 +7,18 @@ class StateReps extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showInfo: props.representatives[1],
+      showInfo: props.representatives[0],
+      currState: props.currState,
     }
     this.updateShownInfo = this.updateShownInfo.bind(this);
   }
 
   componentDidUpdate() {
-    if (this.props.representatives[0] != this.state.showInfo) {
-      this.setState({ showInfo: this.props.representatives[0] });
+    if (this.props.currState !== this.state.currState) {
+      this.setState({
+        showInfo: this.props.representatives[0],
+        currState: this.props.currState
+      });
     }
   }
 
@@ -30,23 +34,23 @@ class StateReps extends Component {
           <Row>
             <Col xs={4} smOffset={2} sm={2.33}>
               <h3 className="stanceTitle"> In Favor </h3>
-              {this.props.representatives.map((rep) =>
+              {this.props.representatives.map((rep, index) =>
                 {if (rep.stance === "in-favor")
-                  return (<p className="stanceFillers" onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>);}
+                  return (<p className="stanceFillers" key={"IF" + index} onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>);}
               )}
             </Col>
             <Col xs={4} sm={2.33}>
               <h3 className="stanceTitle"> Opposed </h3>
-              {this.props.representatives.map((rep) =>
+              {this.props.representatives.map((rep, index) =>
                 {if (rep.stance === "opposed")
-                  return (<p className="stanceFillers" onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>);}
+                  return (<p className="stanceFillers" key={"OP" + index} onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>);}
               )}
             </Col>
             <Col xs={4} sm={2.33}>
               <h3 className="stanceTitle"> No Statement </h3>
-              {this.props.representatives.map((rep) =>
+              {this.props.representatives.map((rep, index) =>
                 {if (rep.stance === "no-statement")
-                  return (<p className="stanceFillers" onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>);}
+                  return (<p className="stanceFillers" key={"NS" + index} onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>);}
               )}
             </Col>
             <Col smOffset={2}></Col>

@@ -23,7 +23,6 @@ class App extends Component {
   render() {
     return (
     	<div>
-	        <Banner />
 	        <KeyPlayers />
           <SearchByState representatives={this.state.representatives} />
 	    </div>
