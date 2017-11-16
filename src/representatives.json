@@ -88,6 +88,24 @@
     "district": " 7th District",
     "quote": "Statement not collected.",
     "stance": "no-statement"
+  },
+  {
+    "name": "Test Ohio",
+    "img": "/img/danny.jpg",
+    "party": " Democrat",
+    "state": " OH",
+    "district": " 7th District",
+    "quote": "Statement not collected.",
+    "stance": "no-statement"
+  },
+  {
+    "name": "Test CA",
+    "img": "/img/danny.jpg",
+    "party": " Democrat",
+    "state": " CA",
+    "district": " 7th District",
+    "quote": "Statement not collected.",
+    "stance": "no-statement"
   }
 ]
 }

@@ -8,9 +8,14 @@ class StateReps extends Component {
     super(props);
     this.state = {
       showInfo: props.representatives[1],
-      keyPlayers: props.representatives,
     }
     this.updateShownInfo = this.updateShownInfo.bind(this);
+  }
+
+  componentDidUpdate() {
+    if (this.props.representatives[0] != this.state.showInfo) {
+      this.setState({ showInfo: this.props.representatives[0] });
+    }
   }
 
   updateShownInfo(rep) {
@@ -25,21 +30,21 @@ class StateReps extends Component {
           <Row>
             <Col xs={4} smOffset={2} sm={2.33}>
               <h3 className="stanceTitle"> In Favor </h3>
-              {this.state.keyPlayers.map((rep) =>
+              {this.props.representatives.map((rep) =>
                 {if (rep.stance === "in-favor")
                   return (<p className="stanceFillers" onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>);}
               )}
             </Col>
             <Col xs={4} sm={2.33}>
               <h3 className="stanceTitle"> Opposed </h3>
-              {this.state.keyPlayers.map((rep) =>
+              {this.props.representatives.map((rep) =>
                 {if (rep.stance === "opposed")
                   return (<p className="stanceFillers" onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>);}
               )}
             </Col>
             <Col xs={4} sm={2.33}>
               <h3 className="stanceTitle"> No Statement </h3>
-              {this.state.keyPlayers.map((rep) =>
+              {this.props.representatives.map((rep) =>
                 {if (rep.stance === "no-statement")
                   return (<p className="stanceFillers" onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>);}
               )}

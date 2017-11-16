@@ -16,10 +16,17 @@ class SearchByState extends Component {
       currState: " IL",
     }
     this.isState = this.isState.bind(this);
+    this.changeState = this.changeState.bind(this);
   }
 
   isState(senator) {
+    console.log(this.state.currState);
     return senator.state === this.state.currState;
+  }
+
+  changeState(e) {
+    //console.log(e.target.value);
+    this.setState({ currState: e.target.value });
   }
 
   // updateStateSelection(state) {
@@ -39,6 +46,15 @@ class SearchByState extends Component {
               <div className="header">
                 <h4 className="stanceHeader"> Search By State </h4>
               </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12}>
+              <select id="id" onChange={this.changeState}>
+                  <option value=" IL">Illinois</option>
+                  <option value=" OH">Ohio</option>
+                  <option value=" CA">California</option>
+                </select>
             </Col>
           </Row>
 
