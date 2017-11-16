@@ -80,7 +80,7 @@ class KeyPlayer extends Component {
           <Col xs={0} smOffset={2}></Col>
           {this.state.keyPlayers.map(rep =>
             <Col xs={3} sm={2}>
-              <div onClick={() => this.updateShownInfo(rep)}>
+              <div className="keyPlayer" onClick={() => this.updateShownInfo(rep)}>
                 <img src={rep.img} className="thumbnailImage"/>
                 <p className="thumbnailBio" style={(rep.stance) === "opposed" ? {backgroundColor: '#cdcdcd'} : {backgroundColor: '#787878'}}> {rep.name} </p>
               </div>

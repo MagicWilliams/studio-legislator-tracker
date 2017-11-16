@@ -99,13 +99,39 @@
     "stance": "no-statement"
   },
   {
-    "name": "Test CA",
+    "name": "Doug LaMalfa",
+    "img": "/img/danny.jpg",
+    "party": " Republican",
+    "state": " CA",
+    "district": " 1st District",
+    "quote": "Middle income families in the north state have been pleading to our office for relief from the drastic effects of this law; such as significantly higher premiums and deductibles coupled with the loss of their original plan and doctor.",
+    "stance": "in-favor"
+  },
+  {
+    "name": "Tom McClintock",
+    "img": "/img/danny.jpg",
+    "party": " Republican",
+    "state": " CA",
+    "district": " 4th District",
+    "quote": "My motion to request that additional resources be focused to assure access for (older, low-income workers) passed the House Budget Committee on a bipartisan vote, and I am grateful that House leadership worked with my office over the weekend to set these changes in motion in the manager's amendment. With this, I will support passage of this bill to the Senate.",
+    "stance": "in-favor"
+  },
+  {
+    "name": "Kevin McCarthy",
     "img": "/img/danny.jpg",
     "party": " Democrat",
     "state": " CA",
-    "district": " 7th District",
-    "quote": "Statement not collected.",
-    "stance": "no-statement"
-  }
-]
+    "district": " 23rd District",
+    "quote": "Our three-phase approach will build a better, patient-centered health system.",
+    "stance": "in-favor"
+  },
+  {
+    "name": "Jerry McNerney",
+    "img": "/img/danny.jpg",
+    "party": " Democrat",
+    "state": " CA",
+    "district": " 9th District",
+    "quote": "If you're a family living paycheck to paycheck, you have a lot to be afraid of. You will either pay more for less coverage or you will lose coverage altogether.",
+    "stance": "opposed"
+  }]
 }

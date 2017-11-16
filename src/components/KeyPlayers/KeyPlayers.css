@@ -21,3 +21,9 @@
 .ScrollHeader {
   text-align: center;
 }
+
+.keyPlayer:hover {
+  cursor: pointer;
+  border: 1px solid #cdcdcd;
+
+}
