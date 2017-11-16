@@ -50,7 +50,7 @@ class SearchByState extends Component {
           </Row>
           <Row>
             <Col xs={12}>
-              <select id="id" onChange={this.changeState}>
+              <select id="id" className="dropDown" onChange={this.changeState}>
                   <option value=" IL">Illinois</option>
                   <option value=" OH">Ohio</option>
                   <option value=" CA">California</option>
