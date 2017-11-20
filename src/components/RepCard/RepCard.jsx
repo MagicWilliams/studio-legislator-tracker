@@ -6,13 +6,14 @@ class RepCard extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      //keyPlayer: true
     }
 
   }
 
   render() {
-    return (
-      <div className="Card">
+    if (this.props.keyPlayer==false) {
+      var output = <div className="Card">
         <Grid fluid>
             <Row>
               <Col xs={3} smOffset={2} sm={2} mdOffset={2} md={1} lgOffset={2} lg={1}>
@@ -33,6 +34,33 @@ class RepCard extends Component {
             </Row>
         </Grid>
       </div>
+    }
+
+    if (this.props.keyPlayer==true) {
+      var output = <div className="Card">
+        <Grid fluid>
+            <Row>
+              <Col xs={12} className="bio">
+                <h4 className="repHeader">
+                  {this.props.party},
+                  {this.props.state},
+                  {this.props.district}
+                </h4>
+
+                <p> {this.props.quote} </p>
+                <p className="source"> {this.props.quoteSource} </p>
+                <a className="link" href={this.props.quoteLink}> {this.props.quoteLink} </a>
+              </Col>
+            </Row>
+        </Grid>
+      </div>
+    }
+    return (
+      <div>
+        {output}
+      </div>
+
+
     );
   }
 }

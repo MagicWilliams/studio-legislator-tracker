@@ -55,7 +55,8 @@ class KeyPlayer extends Component {
           quote: "Statement not collected.",
           stance: "no-statement"
         },
-      ]
+      ],
+      keyPlayer: true
     }
 
   }
@@ -89,6 +90,7 @@ class KeyPlayer extends Component {
         </Row>
       </Grid>
       <RepCard
+        keyPlayer={this.state.keyPlayer}
         img={this.state.showInfo.img}
         name={this.state.showInfo.name}
         party={this.state.showInfo.party}

@@ -9,6 +9,7 @@ class StateReps extends Component {
     this.state = {
       showInfo: props.representatives[0],
       currState: props.currState,
+      keyPlayer: false
     }
     this.updateShownInfo = this.updateShownInfo.bind(this);
   }
@@ -57,6 +58,7 @@ class StateReps extends Component {
           </Row>
           </Grid>
           <RepCard
+            keyPlayer={this.state.keyPlayer}
             img={this.state.showInfo.img}
             name={this.state.showInfo.name}
             party={this.state.showInfo.party}
