@@ -1,0 +1,24 @@
+.stanceTitle {
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+.stanceFillers {
+  text-align: center;
+}
+
+.stanceFillers:hover {
+  cursor: pointer;
+}
+
+.dropDown {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.1em;
+  margin: 10px 0px;
+  border: 1px solid #d9d9d9;
+  height: 1.5em;
+  background-color: #fff;
+}

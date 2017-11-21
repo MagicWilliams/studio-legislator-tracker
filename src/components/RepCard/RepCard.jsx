@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import './RepCard.css';
 
-class Card extends Component {
+class RepCard extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -15,10 +15,10 @@ class Card extends Component {
       <div className="Card">
         <Grid fluid>
             <Row>
-              <Col xs={3} smOffset={1} sm={2} mdOffset={2} md={1} lgOffset={3} lg={1}>
+              <Col xs={3} smOffset={2} sm={2} mdOffset={2} md={1} lgOffset={2} lg={1}>
                 <img alt="img" src={this.props.img} className="image"/>
               </Col>
-              <Col xs={8} sm={8} md={6} lg={5} className="bio">
+              <Col xs={8} sm={6} md={6} lg={7} className="bio">
                 <h4 className="repHeader">
                   {this.props.name},
                   {this.props.party},
@@ -28,7 +28,7 @@ class Card extends Component {
 
                 <p> {this.props.quote} </p>
                 <p className="source"> {this.props.quoteSource} </p>
-                <p className="link"> {this.props.quoteLink} </p>
+                <a className="link" href={this.props.quoteLink}> {this.props.quoteLink} </a>
               </Col>
             </Row>
         </Grid>
@@ -37,4 +37,4 @@ class Card extends Component {
   }
 }
 
-export default Card;
+export default RepCard;

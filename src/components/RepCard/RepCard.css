@@ -18,6 +18,12 @@
 
 .link {
   color: crimson;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: crimson;
+  text-decoration: underline;
 }
 
 .image {

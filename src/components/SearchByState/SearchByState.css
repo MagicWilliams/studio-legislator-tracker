@@ -1,0 +1,60 @@
+.stanceHeader {
+  color: white;
+  text-align: center;
+  display: inline;
+  padding: 12px 6px;
+  margin-top: 50px;
+}
+
+.stanceHeader:hover {
+  cursor: pointer;
+  color: #cdcdcd;
+}
+
+.header {
+  padding: 12px 0px;
+  width: 100%;
+  background-color: #24292e;
+  position: relative;
+  text-align: center;
+}
+
+.tabs-container {
+  position: relative;
+
+}
+
+.senatePic {
+  width: 100%;
+}
+
+.senateCard {
+  border: 1px solid black;
+  position: relative;
+  padding-bottom: 4em;
+}
+
+.senateBio {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  width: 100%;
+}
+
+.Name {
+  margin: 0.5em 0em;
+}
+
+.Position {
+  margin: 2px 0px;
+  font-size: 0.75em;
+}
+
+.committeePic {
+  position: absolute;
+  width: 25%;
+  right: 5px;
+  top: 0;
+  transform: translateY(-50%);
+  border: 1px solid white;
+}
