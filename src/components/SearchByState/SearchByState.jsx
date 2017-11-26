@@ -44,7 +44,7 @@ class SearchByState extends Component {
           <Row>
             <Col xs={12}>
               <div className="header">
-                <h4 className="stanceHeader"> Search By State </h4>
+                <h3 className="stanceHeader"> Search By State </h3>
               </div>
             </Col>
           </Row>

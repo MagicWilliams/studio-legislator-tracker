@@ -73,7 +73,7 @@ class KeyPlayer extends Component {
         <Row>
           <Col xs={12}>
             <div className="header">
-              <h4 className="stanceHeader"> Key Players </h4>
+              <h3 className="stanceHeader"> Key Players </h3>
             </div>
           </Col>
         </Row>
@@ -85,12 +85,12 @@ class KeyPlayer extends Component {
                 style={(rep.name) === name ? {backgroundColor: '#cdcdcd'} : {borderRadius: 0}}
                 onClick={() => this.updateShownInfo(rep)}>
                 <img src={rep.img} className="thumbnailImage"                />
-                <p className="thumbnailBio"
-                  //style={(rep.stance) === "opposed" ? {backgroundColor: '#cdcdcd'} : {backgroundColor: '#787878'}}>
-                  style={(rep.name) === name ? {backgroundColor: '#cdcdcd'} : {backgroundColor: '#787878'}}>
+                <h4 className="thumbnailBio">
+                  {/* style={(rep.stance) === "opposed" ? {backgroundColor: '#cdcdcd'} : {backgroundColor: '#787878'}}>
+                  style={(rep.name) === name ? {backgroundColor: '#cdcdcd'} : {backgroundColor: '#787878'}}> */}
                   {rep.name}
-                </p>
-                <p> {rep.party}, {rep.state}, {rep.district} </p>
+                </h4>
+                <p className="thumbnailDetails"> {rep.party}, {rep.state}, {rep.district} </p>
               </div>
             </Col>
             )}
