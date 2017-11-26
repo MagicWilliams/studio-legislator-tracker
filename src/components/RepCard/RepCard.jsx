@@ -40,17 +40,23 @@ class RepCard extends Component {
       var output = <div className="Card">
         <Grid fluid>
             <Row>
-              <Col xs={12} className="bio">
-                <h4 className="repHeader">
-                  {this.props.party},
-                  {this.props.state},
-                  {this.props.district}
-                </h4>
-
+              <Col xs={12} smOffset={2} sm={8} mdOffset={2} md={8} lgOffset={2} lg={8}>
+                {/* <img alt="img" src={this.props.img} className="image"/> */}
                 <p> {this.props.quote} </p>
                 <p className="source"> {this.props.quoteSource} </p>
                 <a className="link" href={this.props.quoteLink}> {this.props.quoteLink} </a>
               </Col>
+              {/* <Col xs={8} sm={6} md={6} lg={7} className="bio"> */}
+                {/* <h4 className="repHeader">
+                  {this.props.party},
+                  {this.props.state},
+                  {this.props.district}
+                </h4> */}
+
+                {/* <p> {this.props.quote} </p>
+                <p className="source"> {this.props.quoteSource} </p>
+                <a className="link" href={this.props.quoteLink}> {this.props.quoteLink} </a> */}
+              {/* </Col> */}
             </Row>
         </Grid>
       </div>
