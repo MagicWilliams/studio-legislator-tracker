@@ -22,3 +22,28 @@
   height: 1.5em;
   background-color: #fff;
 }
+
+.republicans {
+  color: #870001;
+  /*margin-bottom: 7px;*/
+}
+
+.democrats {
+  color: 	#152F84;
+}
+
+.content {
+  display: flex;
+}
+
+.allContent {
+  align-content: center;
+  margin-top: -15px;
+}
+
+.imageParty {
+  width: 14px;
+  height: 14px;
+  align-self: center;
+  padding-right: 4px;
+}
