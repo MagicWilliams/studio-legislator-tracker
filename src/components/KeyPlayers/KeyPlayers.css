@@ -33,3 +33,15 @@
   margin: 3px;
   color: gray;
 }
+
+.thumbnailBioOpposed:after {
+    content: "\01F6AB";
+ }
+
+ .thumbnailBioInFavor:after {
+     content: "\01F6AB";
+  }
+
+  .thumbnailBioNoStatement:after {
+      content: "\01F6AB";
+   }
