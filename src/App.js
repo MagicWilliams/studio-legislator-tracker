@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import './global-vars.css';
 import Banner from './components/Banner/Banner';
+import Graphs from './components/Graphs/Graphs';
 import KeyPlayers from './components/KeyPlayers/KeyPlayers';
 import SearchByState from './components/SearchByState/SearchByState';
 import data from './representatives.json';
-
+import Stances from './components/Stances/Stances';
+// import SearchBar from './components/partials/SearchBar/SearchBar';
 
 class App extends Component {
   constructor(props) {
@@ -23,8 +24,11 @@ class App extends Component {
   render() {
     return (
     	<div>
-	        <KeyPlayers />
+          <Banner />
+          <Graphs />
+          <KeyPlayers />
           <SearchByState representatives={this.state.representatives} />
+	        <Stances />
 	    </div>
     );
   }
