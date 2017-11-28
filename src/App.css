@@ -39,3 +39,12 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.graphContainer {
+  padding: 100px;
+}
+
+canvas {
+  padding-bottom: 100px;
+  background-color: red;
+}
