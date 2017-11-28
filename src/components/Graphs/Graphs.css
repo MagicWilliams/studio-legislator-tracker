@@ -1,6 +1,26 @@
 .GraphsContainer {
-	height: 550px;
+	height: 700px;
 	background-color: #F5F5F5;
 	width: 100%;
 	text-align: center
+}
+
+.barChart {
+	margin: 0 auto;
+	left: -30px;
+	display: inline-flex;
+}
+
+.graph {
+	dsiplay: inline-flex;
+}
+
+.graphLabels h5 {
+	text-align: center;
+	display: inline;
+	margin-left: 5px;
+}
+
+.repLabel {
+	padding-left: 80px;
 }
