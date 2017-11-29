@@ -47,3 +47,22 @@
   align-self: center;
   padding-right: 4px;
 }
+
+@media only screen and (max-width: 767px) {
+  h3.stanceTitle {
+    font-size: 1em;
+  }
+  .allContent {
+    font-size: 0.9em;
+  }
+
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.stateRepTable {
+  padding-left: 7px;
+  padding-right: 5px;
+}

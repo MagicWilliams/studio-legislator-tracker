@@ -21,6 +21,8 @@
 .link {
   color: crimson;
   text-decoration: none;
+  word-wrap: break-word;
+
 }
 
 .link:hover {
@@ -30,4 +32,29 @@
 
 .image {
   width: 100%;
+}
+
+.content {
+  display: flex;
+}
+
+.quoteSymbol {
+  /*<span style="font-size:150px;line-height:0.6em;opacity:0.2">❝</span>*/
+  font-size: 1.2em;
+  opacity: 0.7;
+}
+
+.nameParty {
+  align-content: center;
+  margin-top: -15px;
+}
+
+.quoteParagraph {
+  margin-top: -15px;
+}
+
+.repDescription {
+  margin-top: -15px;
+  color: gray;
+  font-weight: normal;
 }

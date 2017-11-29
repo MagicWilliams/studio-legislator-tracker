@@ -31,16 +31,21 @@ class StateReps extends Component {
   createOutput(rep) {
     if (rep.party.toLowerCase() == " republican") {
       //return <p className="stanceFillers" className="republicans"> (R) {rep.name} </p>;
-      return <div class="allContent"> <div class="content">
+      return <div class="allContent">
+        <div class="content"
+        style={(rep.name) === this.state.showInfo.name ? {backgroundColor: '#e8e8e8', borderRadius: 6,
+      borderColor: '#e8e8e8'} : {borderRadius: 0}}>
         <img alt="img" src="/img/republican.png" className="imageParty"/>
         <p className="stanceFillers" className="republicans"
-          onClick={() => this.updateShownInfo(rep)}
-          > {rep.name} </p>
+          onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>
       </div>
     </div>;
     }
     if (rep.party.toLowerCase() == " democrat") {
-      return <div class="allContent"> <div class="content">
+      return <div class="allContent">
+        <div class="content"
+           style={(rep.name) === this.state.showInfo.name ? {backgroundColor: '#e8e8e8', borderRadius: 6,
+    borderColor: '#e8e8e8'} : {borderRadius: 0}}>
         <img alt="img" src="/img/democrat.png" className="imageParty"/>
         <p className="stanceFillers" className="democrats"
           onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>
@@ -52,7 +57,7 @@ class StateReps extends Component {
     return (
       <div>
         <Grid fluid>
-          <Row>
+          <Row className="stateRepTable">
             <Col xs={4} smOffset={2} sm={2.33}>
               <h3 className="stanceTitle"> In Favor </h3>
               {this.props.representatives.map((rep, index) =>

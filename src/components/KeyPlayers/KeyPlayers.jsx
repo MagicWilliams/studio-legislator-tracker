@@ -87,12 +87,32 @@ class KeyPlayer extends Component {
     //return "thumbnailBio";
   }
 
+  createOutput(rep) {
+    if (rep.party.toLowerCase() == " republican") {
+      //return <p className="stanceFillers" className="republicans"> (R) {rep.name} </p>;
+      return <div class="allContent"> <div class="content">
+        <img alt="img" src="/img/republican.png" className="imageParty"/>
+        <p className="stanceFillers" className="republicans"
+          onClick={() => this.updateShownInfo(rep)}
+          > {rep.name} </p>
+      </div>
+    </div>;
+    }
+    if (rep.party.toLowerCase() == " democrat") {
+      return <div class="allContent"> <div class="content">
+        <img alt="img" src="/img/democrat.png" className="imageParty"/>
+        <p className="stanceFillers" className="democrats"
+          onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>
+      </div> </div>;
+    }
+  }
+
   render() {
     var name = this.state.showInfo.name;
     //var thumbnailBio = "thumbnailBio";
     return (
       <div>
-      <Grid fluid>
+      <Grid fluid className="allKeyPlayers">
         <Row>
           <Col xs={12}>
             <div className="header">
@@ -105,15 +125,16 @@ class KeyPlayer extends Component {
           {this.state.keyPlayers.map(rep =>
             <Col xs={3} sm={2}>
               <div className="keyPlayer"
-                style={(rep.name) === name ? {backgroundColor: '#cdcdcd'} : {borderRadius: 0}}
+                style={(rep.name) === name ? {backgroundColor: '#e8e8e8', borderRadius: 6,
+              borderColor: '#e8e8e8'} : {borderRadius: 0}}
                 onClick={() => this.updateShownInfo(rep)}>
                 <img src={rep.img} className="thumbnailImage"                />
                 <h4 className={this.updateEmoji(rep)} >
                   {/* style={(rep.stance) === "opposed" ? {backgroundColor: '#cdcdcd'} : {backgroundColor: '#787878'}}>
                   style={(rep.name) === name ? {backgroundColor: '#cdcdcd'} : {backgroundColor: '#787878'}}> */}
-                 {rep.name}
+                 {this.createOutput(rep)}
                 </h4>
-                <p className="thumbnailDetails"> {rep.party}, {rep.state}, {rep.district} </p>
+                <p className="thumbnailDetails"> {rep.state}, {rep.district} </p>
               </div>
             </Col>
             )}

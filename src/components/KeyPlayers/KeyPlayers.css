@@ -14,7 +14,7 @@
 }
 
 .thumbnailBio {
-  text-align: center;
+  /*text-align: center;*/
   margin: 2px 0px;
 }
 
@@ -30,18 +30,30 @@
 
 .thumbnailDetails {
   text-align: center;
-  margin: 3px;
+  margin-top: -12px;
+  /*margin: 2px;*/
   color: gray;
 }
 
+@media only screen and (max-width: 767px) {
+  .thumbnailDetails {
+    font-size: 0.7em;
+  }
+
+}
+
 .thumbnailBioOpposed:after {
-    content: "\01F6AB";
+    /*content: "\01F6AB";*/
  }
 
  .thumbnailBioInFavor:after {
-     content: "\01F6AB";
+     /*content: "\01F6AB";*/
   }
 
   .thumbnailBioNoStatement:after {
-      content: "\01F6AB";
+      /*content: "\01F6AB";*/
+   }
+
+   .allKeyPlayers {
+     margin-bottom: -20px;
    }
