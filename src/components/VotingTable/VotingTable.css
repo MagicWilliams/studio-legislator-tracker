@@ -4,11 +4,17 @@
 
 .tableContainer h3 {
 	padding-right: 20px;
+	font-family: "Aleo";
 }
 
 .demVotes, .republicanVotes {
 	font-weight: bold;
 	padding-right: 10px; 
+	font-family: "Aleo";
+}
+
+table {
+	font-family: "Aleo";
 }
 
 .demVotes {

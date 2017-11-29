@@ -1,3 +1,7 @@
+.RepCard{
+  font-family: "Aleo";
+}
+
 .Card {
   text-align: left;
   padding: 20px;
@@ -63,4 +67,5 @@
 
 .keyPlayerQuote {
   margin-top: 5px;
+  font-family: "Aleo";
 }

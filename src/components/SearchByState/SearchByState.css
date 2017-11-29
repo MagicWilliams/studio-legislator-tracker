@@ -4,6 +4,8 @@
   display: inline;
   padding: 12px 6px;
   margin-top: 50px;
+  font-family: "Aleo";
+  text-transform: uppercase;
 }
 
 .stanceHeader:hover {
