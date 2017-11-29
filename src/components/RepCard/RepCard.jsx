@@ -87,7 +87,7 @@ class RepCard extends Component {
   render() {
     if (this.props.keyPlayer==false) {
       var output = <div className="Card">
-        <Grid fluid>
+        <Grid fluid className="RepCard">
             <Row>
               <Col xs={3} smOffset={2} sm={2} mdOffset={2} md={1} lgOffset={2} lg={1}>
                 <img alt="img" src={this.props.img} className="image"/>

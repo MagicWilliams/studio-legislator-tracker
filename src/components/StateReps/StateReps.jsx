@@ -62,7 +62,7 @@ class StateReps extends Component {
 
   render() {
     return (
-      <div>
+      <div className="stateReps">
         <Grid fluid>
           <Row className="stateRepTable">
             <Col xs={4} smOffset={2} sm={2.33}>

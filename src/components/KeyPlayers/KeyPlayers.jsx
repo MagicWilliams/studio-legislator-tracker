@@ -121,7 +121,7 @@ class KeyPlayer extends Component {
             </div>
           </Col>
         </Row>
-        <Row>
+        <Row className="keyPlayersContainer">
           <Col xs={0} smOffset={2}></Col>
           {this.state.keyPlayers.map(rep =>
             <Col xs={3} sm={2}>

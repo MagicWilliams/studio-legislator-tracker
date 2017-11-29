@@ -1,15 +1,20 @@
 .tableContainer {
 	margin: 0 auto;
-	margin-top: -125px;
 }
 
 .tableContainer h3 {
 	padding-right: 20px;
+	font-family: "Aleo";
 }
 
 .demVotes, .republicanVotes {
 	font-weight: bold;
 	padding-right: 10px; 
+	font-family: "Aleo";
+}
+
+table {
+	font-family: "Aleo";
 }
 
 .demVotes {
@@ -26,6 +31,13 @@ table {
   width: 640px;
   /* Table reset stuff */
   border-collapse: collapse; border-spacing: 0; 
+}
+
+@media only screen and (max-width: 468px){
+	table {
+		width: 90vw;
+		margin-left: 5vw;
+	}
 }
 		
 td, th {  

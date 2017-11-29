@@ -7,6 +7,8 @@ import KeyPlayers from './components/KeyPlayers/KeyPlayers';
 import SearchByState from './components/SearchByState/SearchByState';
 import data from './representatives.json';
 import Stances from './components/Stances/Stances';
+import Table from './components/Table/Table';
+
 // import SearchBar from './components/partials/SearchBar/SearchBar';
 
 class App extends Component {
@@ -25,7 +27,7 @@ class App extends Component {
     return (
     	<div>
           <Banner />
-          <Graphs />
+          <Table />
           <KeyPlayers />
           <SearchByState representatives={this.state.representatives} />
 	        <Stances />
