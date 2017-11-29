@@ -33,10 +33,12 @@ class StateReps extends Component {
       //return <p className="stanceFillers" className="republicans"> (R) {rep.name} </p>;
       return <div class="allContent">
         <div class="content"
-        style={(rep.name) === this.state.showInfo.name ? {backgroundColor: '#e8e8e8', borderRadius: 6,
-      borderColor: '#e8e8e8'} : {borderRadius: 0}}>
-        <img alt="img" src="/img/republican.png" className="imageParty"/>
+        >
+        <img style={(rep.name) === this.state.showInfo.name ? {backgroundColor: '#e8e8e8', borderRadius: 0,
+      borderColor: '#e8e8e8'} : {borderRadius: 0}} alt="img" src="/img/republican.png" className="imageParty"/>
         <p className="stanceFillers" className="republicans"
+          style={(rep.name) === this.state.showInfo.name ? {backgroundColor: '#e8e8e8', borderRadius: 0,
+        borderColor: '#e8e8e8'} : {borderRadius: 0}}
           onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>
       </div>
     </div>;
@@ -44,10 +46,15 @@ class StateReps extends Component {
     if (rep.party.toLowerCase() == " democrat") {
       return <div class="allContent">
         <div class="content"
-           style={(rep.name) === this.state.showInfo.name ? {backgroundColor: '#e8e8e8', borderRadius: 6,
-    borderColor: '#e8e8e8'} : {borderRadius: 0}}>
-        <img alt="img" src="/img/democrat.png" className="imageParty"/>
-        <p className="stanceFillers" className="democrats"
+           >
+        <img
+          style={(rep.name) === this.state.showInfo.name ? {backgroundColor: '#e8e8e8', borderRadius: 0,
+   borderColor: '#e8e8e8'} : {borderRadius: 0}}
+          alt="img" src="/img/democrat.png" className="imageParty"/>
+        <p
+          style={(rep.name) === this.state.showInfo.name ? {backgroundColor: '#e8e8e8', borderRadius: 0,
+   borderColor: '#e8e8e8'} : {borderRadius: 0}}
+          className="stanceFillers" className="democrats"
           onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>
       </div> </div>;
     }
