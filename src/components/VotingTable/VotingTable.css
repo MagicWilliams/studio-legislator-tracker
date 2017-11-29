@@ -26,6 +26,13 @@ table {
   /* Table reset stuff */
   border-collapse: collapse; border-spacing: 0; 
 }
+
+@media only screen and (max-width: 468px){
+	table {
+		width: 90vw;
+		margin-left: 5vw;
+	}
+}
 		
 td, th {  
 	border: 0 none; height: 30px; 

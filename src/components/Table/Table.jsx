@@ -35,9 +35,9 @@ class Table extends Component {
            <Row>
 
 
-            <Col xs={12} className="tableData" md={6}>
+            <Col xs={12} md={6} className="tableData">
               <h3> 464 of 535 voting Congress members on the record as of March 24, 2017 </h3>
-            <table>
+            <table className="table">
               <thead>
                 <tr>
                   <th></th>
@@ -96,7 +96,7 @@ class Table extends Component {
                  <Bar dataKey="for" stackId="a" fill="#850000" />
                  <Bar dataKey="against" stackId="a" fill="#152F85" />
               </BarChart>
-              <PieChart width={800} height={200} fill="000">
+              <PieChart className="pieCharts" width={600} height={200} fill="000">
                 <Pie className="graph" data={pieChartData1} cx={200} cy={100} innerRadius={40} outerRadius={80} fill="#152F85" > 
                   {
                     pieChartData1.map((entry, index) => (

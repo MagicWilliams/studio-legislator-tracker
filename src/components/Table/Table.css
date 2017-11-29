@@ -1,12 +1,16 @@
 .DataSection {
-	height: 50vh;
 	text-align: center;
-	margin-bottom: 150px;
+	display:block;
 }
 
 .tableData {
-	height: 200px;
+	height: 250px;
 	margin-top: 100px;
+}
+
+.table, .pieCharts {
+	margin: 0 auto;
+	padding-bottom: 100px;
 }
 
 /* STYLING FOR THE LEGEND */
@@ -64,3 +68,18 @@
 	margin-left: 25px;
 	margin-bottom: 0px;
 }
+
+
+@media only screen and (max-width: 768px){
+
+	.Charts {
+		margin-top: 200px;
+	}
+
+	.table, .pieCharts {
+		padding-bottom: 0px;
+
+	}
+}
+
+
