@@ -14,7 +14,7 @@
 }
 
 .thumbnailBio {
-  text-align: center;
+  /*text-align: center;*/
   margin: 2px 0px;
 }
 
@@ -27,3 +27,39 @@
   border: 1px solid #cdcdcd;
 
 }
+
+.thumbnailDetails {
+  text-align: center;
+  margin-top: -12px;
+  /*margin: 2px;*/
+  color: gray;
+}
+
+@media only screen and (max-width: 767px) {
+  .thumbnailDetails {
+    font-size: 0.7em;
+  }
+
+}
+
+.emoji {
+  margin-left: 24px;
+  margin-top: -5px;
+  font-size: 30px;
+}
+
+.thumbnailBioOpposed:after {
+    /*content: "\01F6AB";*/
+ }
+
+ .thumbnailBioInFavor:after {
+     /*content: "\01F6AB";*/
+  }
+
+  .thumbnailBioNoStatement:after {
+      /*content: "\01F6AB";*/
+   }
+
+   .allKeyPlayers {
+     margin-bottom: -20px;
+   }

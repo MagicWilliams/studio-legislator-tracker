@@ -22,3 +22,47 @@
   height: 1.5em;
   background-color: #fff;
 }
+
+.republicans {
+  color: #870001;
+  /*margin-bottom: 7px;*/
+}
+
+.democrats {
+  color: 	#152F84;
+}
+
+.content {
+  display: flex;
+}
+
+.allContent {
+  align-content: center;
+  margin-top: -15px;
+}
+
+.imageParty {
+  width: 14px;
+  height: 14px;
+  align-self: center;
+  padding-right: 4px;
+}
+
+@media only screen and (max-width: 767px) {
+  h3.stanceTitle {
+    font-size: 0.8em;
+  }
+  .allContent {
+    font-size: 0.7em;
+  }
+
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.stateRepTable {
+  padding-left: 7px;
+  padding-right: 5px;
+}
