@@ -76,13 +76,13 @@ class KeyPlayer extends Component {
 
   updateEmoji(rep) {
     if (rep.stance=="opposed") {
-      return "thumbnailBioOpposed thumbnailBio";
+      return "🚫";
     }
     if (rep.stance=="in-favor") {
-      return "thumbnailBioInFavor thumbnailBio";
+      return "✅";
     }
     if (rep.stance=="no-statement") {
-      return "thumbnailBioNoStatement thumbnailBio"
+      return "❓";
     }
     //return "thumbnailBio";
   }
@@ -94,7 +94,8 @@ class KeyPlayer extends Component {
         <img alt="img" src="/img/republican.png" className="imageParty"/>
         <p className="stanceFillers" className="republicans"
           onClick={() => this.updateShownInfo(rep)}
-          > {rep.name} </p>
+          > {rep.name}
+        </p>
       </div>
     </div>;
     }
@@ -129,12 +130,14 @@ class KeyPlayer extends Component {
               borderColor: '#e8e8e8'} : {borderRadius: 0}}
                 onClick={() => this.updateShownInfo(rep)}>
                 <img src={rep.img} className="thumbnailImage"                />
-                <h4 className={this.updateEmoji(rep)} >
+                <h4 className="thumbnailBio" >
                   {/* style={(rep.stance) === "opposed" ? {backgroundColor: '#cdcdcd'} : {backgroundColor: '#787878'}}>
                   style={(rep.name) === name ? {backgroundColor: '#cdcdcd'} : {backgroundColor: '#787878'}}> */}
                  {this.createOutput(rep)}
                 </h4>
                 <p className="thumbnailDetails"> {rep.state}, {rep.district} </p>
+                {/* <p className="thumbnailBioOpposed"> </p> */}
+                <p className="emoji"> {this.updateEmoji(rep)} </p>
               </div>
             </Col>
             )}

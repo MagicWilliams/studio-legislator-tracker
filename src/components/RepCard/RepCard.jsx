@@ -11,25 +11,19 @@ class RepCard extends Component {
 
   }
 
-    /*createOutput(rep) {
-      if (rep.party.toLowerCase() == " republican") {
-        //return <p className="stanceFillers" className="republicans"> (R) {rep.name} </p>;
-        return <div class="allContent"> <div class="content">
-          <img alt="img" src="/img/republican.png" className="imageParty"/>
-          <p className="stanceFillers" className="republicans"
-            onClick={() => this.updateShownInfo(rep)}
-            > {rep.name} </p>
-        </div>
-      </div>;
-      }
-      if (rep.party.toLowerCase() == " democrat") {
-        return <div class="allContent"> <div class="content">
-          <img alt="img" src="/img/democrat.png" className="imageParty"/>
-          <p className="stanceFillers" className="democrats"
-            onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>
-        </div> </div>;
-      }
-    }*/
+  updateEmoji() {
+    if (this.props.stance=="opposed") {
+      return "🚫";
+    }
+    if (this.props.stance=="in-favor") {
+      return "✅";
+    }
+    if (this.props.stance=="no-statement") {
+      return "❓";
+    }
+  }
+
+
 
     createOutput() {
       if (this.props.party.toLowerCase() == " republican") {
@@ -44,13 +38,49 @@ class RepCard extends Component {
       }
 
       if (this.props.party.toLowerCase() == " democrat") {
-        return <div class="allContent">
+        return <div class="nameParty">
           <div class="content">
             <img alt="img" src="/img/democrat.png" className="imageParty"/>
             <h4  className="democrats"
               > {this.props.name} </h4>
           </div>
         </div>
+      }
+    }
+
+    createQuote() {
+      if (this.props.stance == "no-statement") {
+        return <p className="quoteParagraph">
+          {/* <span className="quoteSymbol">❝</span> */}
+          {this.props.quote}
+          {/* <span className="quoteSymbol">❞</span> */}
+        </p>;
+      }
+
+      else {
+        return <p className="quoteParagraph">
+          <span className="quoteSymbol">❝</span>
+          {this.props.quote}
+          <span className="quoteSymbol">❞</span>
+        </p>;
+      }
+    }
+
+    createKeyPlayerQuote() {
+      if (this.props.stance == "no-statement") {
+        return <p className="keyPlayerQuote">
+          {/* <span className="quoteSymbol">❝</span> */}
+          {this.props.quote}
+          {/* <span className="quoteSymbol">❞</span> */}
+        </p>;
+      }
+
+      else {
+        return <p className="keyPlayerQuote">
+          <span className="quoteSymbol">❝</span>
+          {this.props.quote}
+          <span className="quoteSymbol">❞</span>
+        </p>;
       }
     }
 
@@ -72,14 +102,11 @@ class RepCard extends Component {
                 <h4 className="repDescription">
                   {this.props.party},
                   {this.props.state},
-                  {this.props.district}
+                  {this.props.district} { }
+                  {this.updateEmoji()}
                 </h4>
 
-                <p className="quoteParagraph">
-                  <span className="quoteSymbol">❝</span>
-                  {this.props.quote}
-                  <span className="quoteSymbol">❞</span>
-                </p>
+                {this.createQuote()}
                 <p className="source"> {this.props.quoteSource} </p>
                 <a className="link" href={this.props.quoteLink}> {this.props.quoteLink} </a>
               </Col>
@@ -94,11 +121,7 @@ class RepCard extends Component {
             <Row>
               <Col xs={12} smOffset={2} sm={8} mdOffset={2} md={8} lgOffset={2} lg={8}>
                 {/* <img alt="img" src={this.props.img} className="image"/> */}
-                <p>
-                  <span className="quoteSymbol">❝</span>
-                  {this.props.quote}
-                  <span className="quoteSymbol">❞</span>
-                </p>
+                {this.createKeyPlayerQuote()}
                 <p className="source"> {this.props.quoteSource} </p>
                 <a className="link" href={this.props.quoteLink}> {this.props.quoteLink} </a>
               </Col>

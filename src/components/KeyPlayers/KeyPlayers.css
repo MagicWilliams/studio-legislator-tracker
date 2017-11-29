@@ -42,6 +42,12 @@
 
 }
 
+.emoji {
+  margin-left: 24px;
+  margin-top: -5px;
+  font-size: 30px;
+}
+
 .thumbnailBioOpposed:after {
     /*content: "\01F6AB";*/
  }

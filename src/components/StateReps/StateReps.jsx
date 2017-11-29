@@ -59,7 +59,7 @@ class StateReps extends Component {
         <Grid fluid>
           <Row className="stateRepTable">
             <Col xs={4} smOffset={2} sm={2.33}>
-              <h3 className="stanceTitle"> In Favor </h3>
+              <h3 className="stanceTitle"> In Favor ✅ </h3>
               {this.props.representatives.map((rep, index) =>
                 {if (rep.stance === "in-favor")
                   //return (<p className="stanceFillers" key={"IF" + index} style={rep.party.toLowerCase() == " republican" ? {color: "red"} : {color: "blue"}} onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>);
@@ -68,7 +68,7 @@ class StateReps extends Component {
               )}
             </Col>
             <Col xs={4} sm={2.33}>
-              <h3 className="stanceTitle"> Opposed </h3>
+              <h3 className="stanceTitle"> Opposed 🚫 </h3>
               {this.props.representatives.map((rep, index) =>
                 {if (rep.stance === "opposed")
                   //return (<p className="stanceFillers" key={"OP" + index} style={rep.party.toLowerCase() == " republican" ? {color: "red"} : {color: "blue"}} onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>);
@@ -77,7 +77,7 @@ class StateReps extends Component {
               )}
             </Col>
             <Col xs={4} sm={2.33}>
-              <h3 className="stanceTitle"> No Statement </h3>
+              <h3 className="stanceTitle"> No Statement ❓ </h3>
               {this.props.representatives.map((rep, index) =>
                 {if (rep.stance === "no-statement")
                   //return (<p className="stanceFillers" key={"NS" + index} style={rep.party.toLowerCase() == " republican" ? {color: "red"} : {color: "blue"}} onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>);
