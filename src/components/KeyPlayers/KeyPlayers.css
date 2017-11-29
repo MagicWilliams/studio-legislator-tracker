@@ -16,6 +16,7 @@
 .thumbnailBio {
   /*text-align: center;*/
   margin: 2px 0px;
+  font-family: "Aleo";
 }
 
 .ScrollHeader {
@@ -25,7 +26,6 @@
 .keyPlayer:hover {
   cursor: pointer;
   border: 1px solid #cdcdcd;
-
 }
 
 .thumbnailDetails {
@@ -48,18 +48,12 @@
   font-size: 30px;
 }
 
-.thumbnailBioOpposed:after {
-    /*content: "\01F6AB";*/
- }
 
- .thumbnailBioInFavor:after {
-     /*content: "\01F6AB";*/
-  }
+.allKeyPlayers {
+  margin-bottom: -20px;
+}
 
-  .thumbnailBioNoStatement:after {
-      /*content: "\01F6AB";*/
-   }
-
-   .allKeyPlayers {
-     margin-bottom: -20px;
-   }
+.keyPlayersContainer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
