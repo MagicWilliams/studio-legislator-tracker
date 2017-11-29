@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import VotingTable from '../VotingTable/VotingTable';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import './Banner.css';
 
@@ -11,21 +10,7 @@ class Banner extends Component {
           <Row>
             <Col xs={12} className="titleBar">
               <h1 className="title"> See Where Members of Congress Stand on New Health Care Bill </h1>
-              <h5 className = "subtitle"> Created by your average ordinary college kids </h5>
-            </Col>
-          </Row>
-          <Row>
-            <Col xs={12} className="bannerBody">
-              <h3> 464 of 535 voting Congress members on the record as of March 24, 2017 </h3>
-            </Col>
-            <VotingTable />
-          </Row>
-          <Row>
-            <Col xs={12} className="legend">
-              <div className="blueSq">
-              </div> <p> Dem </p>
-              <div className="redSq">
-              </div> <p> Rep </p>
+              <h5 className="subtitle"> Jeffrey Birori, Sameena Khan, David Latimore, Hangda Zhang </h5>
             </Col>
           </Row>
         </Grid>
