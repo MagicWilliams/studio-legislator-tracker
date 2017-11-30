@@ -26,12 +26,14 @@ class Table extends Component {
 
     return (
       <div>
-        <Grid className="DataSection">
-           <Row>
-            <Col xs={12}>
-              <h3 className="DataSectionHeader"> National Overview </h3>
-            </Col>
-           </Row>
+        <Grid className="DataSection" fluid>
+            <Row>
+              <Col xs={12}>
+                <div className="header">
+                  <h3 className="stanceHeader"> National Overview </h3>
+                </div>
+              </Col>
+            </Row>
            <Row>
 
 
