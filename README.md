@@ -5,9 +5,7 @@
 The project uses Node with Express for the server-side, and React on the client-side. Webpack handles building our client-side JS and CSS. Since this project primarily uses ES6 (aka ES2015) Javascript, Webpack uses Babel to transpile the JS so it can be interpreted by the browser.
 
 **Building & Running**:
-To setup up this project, `git clone` it onto your machine, `cd` into the project, and then run `npm install`. Once all of the required modules are downloaded, you need to start a server for the project. There are two ways do this:
-- _webpack-dev-server_: Use this while working on client-side development by running `webpack-dev-server` from the project's root directory. Each time you save, this server will rebuild the project and refresh the localhost page in your browser. Put this in a separate terminal tab. Note that rebuild/refresh on save doesn't editing working with files in the `src/static` directory; you'll have to restart the server by hand.
-- _Node.js server_: This will start the project through or `index.js` code. If you are making server-side code changes, use this. Just run `npm start`.
+To setup up this project, `git clone` it onto your machine, `cd` into the project, and then run `npm install`. Once all of the required modules are downloaded, you'll need to start a server for the project, so just run `npm start`.
 
 ### Client-Side (React & react-router)
 **Components**: All React components should be placed in the `src/components` directory.
