@@ -19,8 +19,8 @@ class Table extends Component {
     let pieChartData2 = [{name: 'For', value: 211}, {name: 'Against', value: 301}];
 
 
-    let demColors = ["#152F85", "#850000"];
-    let repColors = ["#850000", "#152F85"];
+    let demColors = ["#285AFF", "#152F85"];
+    let repColors = ["#FF2021", "#850000"];
 
 
 
