@@ -40,7 +40,7 @@ class SearchByState extends Component {
   render() {
     return (
       <div>
-        <Grid>
+        <Grid fluid>
           <Row>
             <Col xs={12}>
               <div className="header">
@@ -62,7 +62,7 @@ class SearchByState extends Component {
 
         {/* <SelectState updateStateSelection={this.updateStateSelection} /> */}
 
-        <StateReps currState={this.state.currState} representatives={this.state.representatives.filter(this.isState)}/>
+        <StateReps className = "stateReps" currState={this.state.currState} representatives={this.state.representatives.filter(this.isState)}/>
 
       </div>
     );

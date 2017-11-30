@@ -30,7 +30,6 @@ class App extends Component {
           <Table />
           <KeyPlayers />
           <SearchByState representatives={this.state.representatives} />
-	        <Stances />
 	    </div>
     );
   }
