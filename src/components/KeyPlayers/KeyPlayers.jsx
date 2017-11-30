@@ -90,7 +90,7 @@ class KeyPlayer extends Component {
   createOutput(rep) {
     if (rep.party.toLowerCase() == " republican") {
       //return <p className="stanceFillers" className="republicans"> (R) {rep.name} </p>;
-      return <div class="allContent"> <div class="content">
+      return <div class="allContent"> <div class="keyPlayerName">
         <img alt="img" src="/img/republican.png" className="imageParty"/>
         <p className="stanceFillers" className="republicans"
           onClick={() => this.updateShownInfo(rep)}
@@ -100,10 +100,11 @@ class KeyPlayer extends Component {
     </div>;
     }
     if (rep.party.toLowerCase() == " democrat") {
-      return <div class="allContent"> <div class="content">
+      return <div class="allContent"> <div class="keyPlayerName">
         <img alt="img" src="/img/democrat.png" className="imageParty"/>
         <p className="stanceFillers" className="democrats"
-          onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>
+          onClick={() => this.updateShownInfo(rep)}> {rep.name}
+        </p>
       </div> </div>;
     }
   }
@@ -130,14 +131,16 @@ class KeyPlayer extends Component {
               borderColor: '#e8e8e8'} : {borderRadius: 0}}
                 onClick={() => this.updateShownInfo(rep)}>
                 <img src={rep.img} className="thumbnailImage"                />
+              <div className="nameAndDescription">
                 <h4 className="thumbnailBio" >
                   {/* style={(rep.stance) === "opposed" ? {backgroundColor: '#cdcdcd'} : {backgroundColor: '#787878'}}>
                   style={(rep.name) === name ? {backgroundColor: '#cdcdcd'} : {backgroundColor: '#787878'}}> */}
                  {this.createOutput(rep)}
                 </h4>
-                <p className="thumbnailDetails"> {rep.state}, {rep.district} </p>
+                <p className="thumbnailDetails"> {rep.state}, {rep.district} { } {this.updateEmoji(rep)} </p>
+              </div>
                 {/* <p className="thumbnailBioOpposed"> </p> */}
-                <p className="emoji"> {this.updateEmoji(rep)} </p>
+                {/* <p className="emoji"> {this.updateEmoji(rep)} </p> */}
               </div>
             </Col>
             )}

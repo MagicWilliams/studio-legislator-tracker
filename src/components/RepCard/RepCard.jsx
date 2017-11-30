@@ -28,7 +28,7 @@ class RepCard extends Component {
     createOutput() {
       if (this.props.party.toLowerCase() == " republican") {
         return <div className="nameParty">
-          <div className="content">
+          <div className="legislatorName">
             <img alt="img" src="/img/republican.png" className="imageParty"/>
             <h4 className="republicans"
               //onClick={() => this.updateShownInfo(rep)}
