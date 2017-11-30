@@ -90,15 +90,6 @@
     "stance": "no-statement"
   },
   {
-    "name": "Test Ohio",
-    "img": "/img/danny.jpg",
-    "party": " Democrat",
-    "state": " OH",
-    "district": " 7th District",
-    "quote": "Statement not collected.",
-    "stance": "no-statement"
-  },
-  {
     "name": "Doug LaMalfa",
     "img": "/img/danny.jpg",
     "party": " Republican",
@@ -124,6 +115,128 @@
     "district": " 23rd District",
     "quote": "Our three-phase approach will build a better, patient-centered health system.",
     "stance": "in-favor"
+  },
+  {
+    "name": "Steve Chabot",
+    "img": "/img/stevechabot.jpg",
+    "party": " Republican",
+    "state": " OH",
+    "district": " 1st District",
+    "quote": "Repealing and replacing Obamacare is going to be a complicated, multi-step process. The legislation introduced this week begins the process by taking control away from federal bureaucrats and returning health care decisions to patients and their doctors. I expect that changes to improve the legislation will be made as it works its way through Congress, and I hope to be able to support the legislation in its final form.",
+    "stance": "in-favor",
+    "quoteSource": "Press release, March 7, 2017",
+    "quoteLink": "https://twitter.com/RepBillJohnson/status/844587815828684800"
+
+  },
+  {
+    "name": "Bill Johnson",
+    "img": "/img/billjohnson.jpg",
+    "party": " Republican",
+    "state": " OH",
+    "district": " 6th District",
+    "quote": "I am a supporter of the bill.",
+    "stance": "in-favor"
+  },
+  {
+    "name": "Patrick J. Tiberi",
+    "img": "/img/patricktiberi.jpg",
+    "party": " Republican",
+    "state": " OH",
+    "district": " 12th District",
+    "quote": "The American Health Care Act is our plan to repeal Obamacare and replace it with a 21st century system that gives people better access to quality and affordable health care. It contains specific reforms to provide relief from Obamacare’s taxes and mandates, and gives patients the tools they need to be in charge of their own care, like increased access to health savings accounts and tax credits to help individuals and families purchase the care they need.",
+    "stance": "in-favor",
+    "quoteSource": "Press release, March 6, 2017",
+    "quoteLink": "http://tiberi.house.gov/news/documentsingle.aspx?DocumentID=395121"
+  },
+  {
+    "name": "Sherrod Brown",
+    "img": "/img/sherrodbrown.jpg",
+    "party": " Democrat",
+    "state": " OH",
+    "district": "",
+    "quote": "This plan will raise prices for Ohioans – particularly older Ohioans – and kick people off of the coverage they have today. It will threaten jobs across our state by cutting funding for local hospitals that employ hundreds of thousands of Ohioans. This plan does nothing to lower healthcare costs for Ohioans, but hands a huge tax break to drug companies and insurance executives who jack up their prices.",
+    "stance": "opposed",
+    "quoteSource": "Press release, March 7, 2017",
+    "quoteLink": "https://www.brown.senate.gov/newsroom/press/release/brown-statement-on-republican-healthcare-bill"
+  },
+  {
+    "name": "Joyce Beatty",
+    "img": "/img/joycebeatty.jpg",
+    "party": " Democrat",
+    "state": " OH",
+    "district": " 3rd District",
+    "quote": "Republicans have had seven years to develop their own comprehensive healthcare plan. Yet, they have failed to deliver a workable plan—even conceding that their new bill is a 'work in progress.' That being said, it is painfully obvious that 'Republicancare' is going to be a prescription for disaster for our seniors, women, people with disabilities, the sick and countless working families.",
+    "stance": "opposed",
+    "quoteSource": "Press release, March 9, 2017"
+  },
+  {
+    "name": "Jim Jordan",
+    "img": "/img/jimjordan.jpg",
+    "party": " Republican",
+    "state": " OH",
+    "district": " 4th District",
+    "quote": "We’ve had meetings with the vice president, with the secretary, with the budget director and with the president, himself. I appreciate that fact. I just think that the speaker’s plan, it doesn’t accomplish what the voters sent us here to accomplish. That is why we are opposed to it.",
+    "stance": "opposed",
+    "quoteLink": "http://philadelphia.cbslocal.com/2017/03/20/house-freedom-caucus-bill-does-not-have-the-votes/",
+    "quoteSource": "News story, March 20, 2017"
+  },
+  {
+    "name": "Warren Davidson",
+    "img": "/img/warrdendavidson.jpg",
+    "party": " Republican",
+    "state": " OH",
+    "district": " 8th District",
+    "quote": "If we called the votes today, I would be a ‘no,’ as would a lot of other people in the Congress today.",
+    "stance": "opposed",
+    "quoteLink": "http://www.npr.org/2017/03/16/520440746/house-freedom-caucus-member-responds-to-white-house-budget-proposal",
+    "quoteSource": "News interview, March 16, 2017"
+  },
+  {
+    "name": "Robert E. Latta",
+    "img": "/img/robertlatta.jpg",
+    "party": " Republican",
+    "state": " OH",
+    "district": " 5th District",
+    "quote": "Statement not collected.",
+    "stance": "no-statement"
+  },
+  {
+    "name": "Bob Gibbs",
+    "img": "/img/bobgibbs.jpg",
+    "party": " Republican",
+    "state": " OH",
+    "district": " 7th District",
+    "quote": "Statement not collected.",
+    "stance": "no-statement"
+  },
+  {
+    "name": "Dianne Feinstein",
+    "img": "/img/diannefeinstein.jpg",
+    "party": " Democrat",
+    "state": " CA",
+    "quote": "The Republican health care plan would devastate California & leave millions without health insurance. I strongly oppose it.",
+    "stance": "opposed",
+    "quoteSource": "Twitter, March 8, 2017",
+    "quoteLink": "https://twitter.com/SenFeinstein/status/839574695460614144"
+  },
+  {
+    "name": "Kamala Harris",
+    "img": "/img/kamalaharris.jpg",
+    "party": " Democrat",
+    "state": " CA",
+    "quote": "Spoiler: #Trumpcare is really just a tax break for the rich.",
+    "stance": "opposed",
+    "quoteSource": "Twitter, March 10, 2017",
+    "quoteLink": "https://twitter.com/SenKamalaHarris/status/840283623819431936"
+  },
+  {
+    "name": "Edward R. Royce",
+    "img": "/img/edwardroyce.jpg",
+    "party": " Republican",
+    "state": " CA",
+    "district": " 39th District",
+    "quote": "Statement not collected.",
+    "stance": "no-statement"
   },
   {
     "name": "Jerry McNerney",

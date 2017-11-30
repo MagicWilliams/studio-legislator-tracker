@@ -10,6 +10,7 @@
 
 .stanceFillers {
   text-align: center;
+
 }
 
 .stanceFillers:hover {
@@ -43,10 +44,12 @@
 
 .content {
   display: flex;
+  justify-content: center;
 }
 
 .allContent {
   align-content: center;
+  position: relative;
   margin-top: -15px;
 }
 
@@ -55,6 +58,7 @@
   height: 14px;
   align-self: center;
   padding-right: 4px;
+  display: block;
 }
 
 @media only screen and (max-width: 767px) {
@@ -63,6 +67,9 @@
   }
   .allContent {
     font-size: 0.7em;
+  }
+  .content {
+    justify-content: flex-start;
   }
 
 }
