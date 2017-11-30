@@ -19,6 +19,12 @@ class SearchByState extends Component {
     this.changeState = this.changeState.bind(this);
   }
 
+  componentDidUpdate() {
+    if (this.props.representatives != this.state.representatives) {
+      this.setState({ representatives: this.props.representatives });
+    }
+  }
+
   isState(senator) {
     console.log(this.state.currState);
     return senator.state === this.state.currState;

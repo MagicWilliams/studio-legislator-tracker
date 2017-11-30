@@ -8,11 +8,6 @@
   text-transform: uppercase;
 }
 
-.stanceHeader:hover {
-  cursor: pointer;
-  color: #cdcdcd;
-}
-
 .header {
   padding: 12px 0px;
   margin-bottom: 15px;
