@@ -95,8 +95,8 @@ class Table extends Component {
                  <YAxis type="category" dataKey="name"/>
                  <CartesianGrid strokeDasharray="3 3"/>
                  <Tooltip/>
-                 <Bar dataKey="for" stackId="a" fill="#850000" />
-                 <Bar dataKey="against" stackId="a" fill="#152F85" />
+                 <Bar dataKey="for" stackId="a" fill="#555555" />
+                 <Bar dataKey="against" stackId="a" fill="#c4c4c4" />
               </BarChart>
               <PieChart className="pieCharts" width={600} height={200} fill="000">
                 <Pie className="graph" data={pieChartData1} cx={200} cy={100} innerRadius={40} outerRadius={80} fill="#152F85" > 
@@ -117,6 +117,10 @@ class Table extends Component {
 
                 <Tooltip/>
              </PieChart>
+             <div className = "labels">
+              <h4 className="demLabel"> Democrats </h4>
+              <h4 className="repLabel"> Republicans </h4>
+             </div>
             </Col>
           </Row>
 
