@@ -215,9 +215,28 @@
     "party": " Democrat",
     "state": " CA",
     "quote": "The Republican health care plan would devastate California & leave millions without health insurance. I strongly oppose it.",
-    "stance": "no-statement",
+    "stance": "opposed",
     "quoteSource": "Twitter, March 8, 2017",
     "quoteLink": "https://twitter.com/SenFeinstein/status/839574695460614144"
+  },
+  {
+    "name": "Kamala Harris",
+    "img": "/img/kamalaharris.jpg",
+    "party": " Democrat",
+    "state": " CA",
+    "quote": "Spoiler: #Trumpcare is really just a tax break for the rich.",
+    "stance": "opposed",
+    "quoteSource": "Twitter, March 10, 2017",
+    "quoteLink": "https://twitter.com/SenKamalaHarris/status/840283623819431936"
+  },
+  {
+    "name": "Edward R. Royce",
+    "img": "/img/edwardroyce.jpg",
+    "party": " Republican",
+    "state": " CA",
+    "district": " 39th District",
+    "quote": "Statement not collected.",
+    "stance": "no-statement"
   },
   {
     "name": "Jerry McNerney",

@@ -7,14 +7,17 @@ class KeyPlayer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showInfo: {
-        name: "Danny K. Davis",
-        img: "/img/danny.jpg",
+      showInfo:
+      {
+        name: "Robin Kelly",
+        img: "/img/robin.jpg",
         party: " Democrat",
         state: " IL",
-        district: " 7th District",
-        quote: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
-        stance: "no-statement"
+        district: " 2nd District",
+        quote: "The Affordable Care Act has left behind a legacy of progress. It is working and is more popular than ever. Let's fix any issues instead of passing this bill that will make Americans sick again.",
+        quoteSource: "Press release, March 7, 2017",
+        quoteLink: "http://robinkelly.house.gov/media-center/press-releases/rep-kelly-releases-a-statement-on-republicans-aca-repeal-bill",
+        stance: "opposed"
       },
       keyPlayers: [
         {
@@ -40,29 +43,26 @@ class KeyPlayer extends Component {
           "stance": "in-favor"
         },
         {
-          name: "Dan Lipinski",
-          img: "/img/dan.jpg",
-          party: " Democrat",
-          state: " IL",
-          district: " 3rd District",
-          quote: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
-          stance: "in-favor",
-          quoteSource: "Press release, March 7, 2017",
-          quoteLink: "http://robinkelly.house.gov/media-center/press-releases/rep-kelly-releases-a-statement-on-republicans-aca-repeal-bill",
-
+          "name": "Steve Chabot",
+          "img": "/img/stevechabot.jpg",
+          "party": " Republican",
+          "state": " OH",
+          "district": " 1st District",
+          "quote": "Repealing and replacing Obamacare is going to be a complicated, multi-step process. The legislation introduced this week begins the process by taking control away from federal bureaucrats and returning health care decisions to patients and their doctors. I expect that changes to improve the legislation will be made as it works its way through Congress, and I hope to be able to support the legislation in its final form.",
+          "stance": "in-favor",
+          "quoteSource": "Press release, March 7, 2017",
+          "quoteLink": "https://twitter.com/RepBillJohnson/status/844587815828684800"
         },
         {
-          name: "Danny K. Davis",
-          img: "/img/danny.jpg",
-          party: " Democrat",
-          state: " IL",
-          district: " 7th District",
-          quote: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga",
-          stance: "no-statement",
-          quoteSource: "Press release, March 7, 2017",
-          quoteLink: "http://robinkelly.house.gov/media-center/press-releases/rep-kelly-releases-a-statement-on-republicans-aca-repeal-bill",
-
-        },
+          "name": "Kamala Harris",
+          "img": "/img/kamalaharris.jpg",
+          "party": " Democrat",
+          "state": " CA",
+          "quote": "Spoiler: #Trumpcare is really just a tax break for the rich.",
+          "stance": "opposed",
+          "quoteSource": "Twitter, March 10, 2017",
+          "quoteLink": "https://twitter.com/SenKamalaHarris/status/840283623819431936"
+        }
       ],
       keyPlayer: true
     }
