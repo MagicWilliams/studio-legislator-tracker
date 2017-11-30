@@ -39,7 +39,7 @@ class RepCard extends Component {
 
       if (this.props.party.toLowerCase() == " democrat") {
         return <div class="nameParty">
-          <div class="content">
+          <div class="legislatorName">
             <img alt="img" src="/img/democrat.png" className="imageParty"/>
             <h4  className="democrats"
               > {this.props.name} </h4>
