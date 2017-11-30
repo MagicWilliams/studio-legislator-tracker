@@ -54,14 +54,13 @@ class KeyPlayer extends Component {
           "quoteLink": "https://twitter.com/RepBillJohnson/status/844587815828684800"
         },
         {
-          "name": "Kamala Harris",
-          "img": "/img/kamalaharris.jpg",
+          "name": "Jerry McNerney",
+          "img": "/img/danny.jpg",
           "party": " Democrat",
           "state": " CA",
-          "quote": "Spoiler: #Trumpcare is really just a tax break for the rich.",
-          "stance": "opposed",
-          "quoteSource": "Twitter, March 10, 2017",
-          "quoteLink": "https://twitter.com/SenKamalaHarris/status/840283623819431936"
+          "district": " 9th District",
+          "quote": "If you're a family living paycheck to paycheck, you have a lot to be afraid of. You will either pay more for less coverage or you will lose coverage altogether.",
+          "stance": "opposed"
         }
       ],
       keyPlayer: true
