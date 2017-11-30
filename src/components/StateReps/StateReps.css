@@ -47,6 +47,10 @@
   justify-content: center;
 }
 
+.content:hover {
+  cursor: pointer;
+}
+
 .allContent {
   align-content: center;
   position: relative;

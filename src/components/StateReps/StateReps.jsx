@@ -9,7 +9,12 @@ class StateReps extends Component {
     this.state = {
       showInfo: props.representatives[0],
       currState: props.currState,
-      keyPlayer: false
+      keyPlayer: false,
+      stances: [
+        {type: "in-favor", header: "In Favor ✅"},
+        {type: "opposed", header: "Opposed 🚫"},
+        {type: "no-statement", header: "No Statement ❓"},
+      ]
     }
     this.updateShownInfo = this.updateShownInfo.bind(this);
     this.createOutput = this.createOutput.bind(this);
@@ -29,35 +34,22 @@ class StateReps extends Component {
   }
 
   createOutput(rep) {
-    if (rep.party.toLowerCase() == " republican") {
-      //return <p className="stanceFillers" className="republicans"> (R) {rep.name} </p>;
-      return <div class="allContent">
-        <div class="content"
-        >
-        <img style={(rep.name) === this.state.showInfo.name ? {backgroundColor: '#e8e8e8', borderRadius: 0,
-      borderColor: '#e8e8e8'} : {borderRadius: 0}} alt="img" src="/img/republican.png" className="imageParty"/>
-        <p className="stanceFillers" className="republicans"
-          style={(rep.name) === this.state.showInfo.name ? {backgroundColor: '#e8e8e8', borderRadius: 0,
-        borderColor: '#e8e8e8'} : {borderRadius: 0}}
-          onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>
+    return (
+      <div class="allContent">
+        <div class="content">
+          <img style={(rep.name) === this.state.showInfo.name ?
+            {backgroundColor: '#e8e8e8', borderRadius: 0, borderColor: '#e8e8e8'} :
+            {borderRadius: 0}} alt="img"
+            src={rep.party.toLowerCase() == " republican" ? "/img/republican.png" : "/img/democrat.png"}
+            className="imageParty"/>
+          <p className="stanceFillers" className={rep.party.toLowerCase() == " republican" ? "republicans" : "democrats"}
+            style={(rep.name) === this.state.showInfo.name ?
+              {backgroundColor: '#e8e8e8', borderRadius: 0, borderColor: '#e8e8e8'} : {borderRadius: 0}}
+            onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>
+        </div>
       </div>
-    </div>;
-    }
-    if (rep.party.toLowerCase() == " democrat") {
-      return <div class="allContent">
-        <div class="content"
-           >
-        <img
-          style={(rep.name) === this.state.showInfo.name ? {backgroundColor: '#e8e8e8', borderRadius: 0,
-   borderColor: '#e8e8e8'} : {borderRadius: 0}}
-          alt="img" src="/img/democrat.png" className="imageParty"/>
-        <p
-          style={(rep.name) === this.state.showInfo.name ? {backgroundColor: '#e8e8e8', borderRadius: 0,
-   borderColor: '#e8e8e8'} : {borderRadius: 0}}
-          className="stanceFillers" className="democrats"
-          onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>
-      </div> </div>;
-    }
+    );
+
   }
 
   render() {
@@ -65,33 +57,20 @@ class StateReps extends Component {
       <div className="stateReps">
         <Grid fluid>
           <Row className="stateRepTable">
-            <Col xs={4} smOffset={2} sm={2.33}>
-              <h3 className="stanceTitle"> In Favor ✅ </h3>
-              {this.props.representatives.map((rep, index) =>
-                {if (rep.stance === "in-favor")
-                  //return (<p className="stanceFillers" key={"IF" + index} style={rep.party.toLowerCase() == " republican" ? {color: "red"} : {color: "blue"}} onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>);
-                  return this.createOutput(rep);
-                }
-              )}
-            </Col>
-            <Col xs={4} sm={2.33}>
-              <h3 className="stanceTitle"> Opposed 🚫 </h3>
-              {this.props.representatives.map((rep, index) =>
-                {if (rep.stance === "opposed")
-                  //return (<p className="stanceFillers" key={"OP" + index} style={rep.party.toLowerCase() == " republican" ? {color: "red"} : {color: "blue"}} onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>);
-                  return this.createOutput(rep);
-                }
-              )}
-            </Col>
-            <Col xs={4} sm={2.33}>
-              <h3 className="stanceTitle"> No Statement ❓ </h3>
-              {this.props.representatives.map((rep, index) =>
-                {if (rep.stance === "no-statement")
-                  //return (<p className="stanceFillers" key={"NS" + index} style={rep.party.toLowerCase() == " republican" ? {color: "red"} : {color: "blue"}} onClick={() => this.updateShownInfo(rep)}> {rep.name} </p>);
-                  return this.createOutput(rep);
-                }
-              )}
-            </Col>
+
+
+            <Col smOffset={2} />
+            {this.state.stances.map((stance, index) =>
+              <Col xs={4} sm={2.33}>
+                <h3 className="stanceTitle"> {stance.header} </h3>
+                {this.props.representatives.map((rep, index) =>
+                  {if (rep.stance === stance.type)
+                    return this.createOutput(rep);
+                  }
+                )}
+              </Col>
+            )}
+
             <Col smOffset={2}></Col>
           </Row>
           </Grid>

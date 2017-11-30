@@ -12,13 +12,13 @@ class RepCard extends Component {
   }
 
   updateEmoji() {
-    if (this.props.stance=="opposed") {
+    if (this.props.stance==="opposed") {
       return "🚫";
     }
-    if (this.props.stance=="in-favor") {
+    if (this.props.stance==="in-favor") {
       return "✅";
     }
-    if (this.props.stance=="no-statement") {
+    if (this.props.stance==="no-statement") {
       return "❓";
     }
   }
@@ -26,7 +26,7 @@ class RepCard extends Component {
 
 
     createOutput() {
-      if (this.props.party.toLowerCase() == " republican") {
+      if (this.props.party.toLowerCase() === " republican") {
         return <div className="nameParty">
           <div className="legislatorName">
             <img alt="img" src="/img/republican.png" className="imageParty"/>
@@ -37,7 +37,7 @@ class RepCard extends Component {
         </div>
       }
 
-      if (this.props.party.toLowerCase() == " democrat") {
+      if (this.props.party.toLowerCase() === " democrat") {
         return <div class="nameParty">
           <div class="legislatorName">
             <img alt="img" src="/img/democrat.png" className="imageParty"/>
@@ -49,7 +49,7 @@ class RepCard extends Component {
     }
 
     createQuote() {
-      if (this.props.stance == "no-statement") {
+      if (this.props.stance === "no-statement") {
         return <p className="quoteParagraph">
           {/* <span className="quoteSymbol">❝</span> */}
           {this.props.quote}
@@ -67,7 +67,7 @@ class RepCard extends Component {
     }
 
     createKeyPlayerQuote() {
-      if (this.props.stance == "no-statement") {
+      if (this.props.stance === "no-statement") {
         return <p className="keyPlayerQuote">
           {/* <span className="quoteSymbol">❝</span> */}
           {this.props.quote}
@@ -85,7 +85,7 @@ class RepCard extends Component {
     }
 
   render() {
-    if (this.props.keyPlayer==false) {
+    if (this.props.keyPlayer===false) {
       var output = <div className="Card">
         <Grid fluid className="RepCard">
             <Row>
@@ -115,7 +115,7 @@ class RepCard extends Component {
       </div>
     }
 
-    if (this.props.keyPlayer==true) {
+    if (this.props.keyPlayer===true) {
       var output = <div className="Card">
         <Grid fluid>
             <Row>
