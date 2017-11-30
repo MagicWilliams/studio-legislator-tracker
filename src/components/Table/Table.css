@@ -4,9 +4,34 @@
 	font-family: "Aleo";
 }
 
+.stanceHeader {
+  color: white;
+  text-align: center;
+  display: inline;
+  padding: 12px 6px;
+  margin-top: 50px;
+  font-family: "Aleo";
+  text-transform: uppercase;
+}
+
+.stanceHeader:hover {
+  cursor: pointer;
+  color: #cdcdcd;
+}
+
+.header {
+  padding: 12px 0px;
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: #24292e;
+  position: relative;
+  text-align: center;
+}
+
 .tableData {
 	height: 250px;
-	margin-top: 100px;
+	margin-top: 50px;
+	padding-left: 50px;
 }
 
 .table, .pieCharts {
@@ -54,7 +79,7 @@
 
 .Charts {
 	padding-left: 50px;
-	margin-top: 80px;
+	margin-top: 30px;
 }
 
 .legendContainer {
