@@ -25,7 +25,9 @@
 
 .keyPlayer:hover {
   cursor: pointer;
-  border: 1px solid #cdcdcd;
+  /*border: 1px solid #cdcdcd;*/
+  background-color: #e8e8e8;
+  border-radius: 6% !important;
 }
 
 .thumbnailDetails {

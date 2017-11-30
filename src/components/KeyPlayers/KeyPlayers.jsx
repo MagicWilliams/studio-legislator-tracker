@@ -29,16 +29,15 @@ class KeyPlayer extends Component {
           stance: "opposed"
         },
         {
-            name: "Bobby Rush",
-            img: "/img/bobby.jpg",
-            party: " Republican",
-            state: " IL",
-            district: " 1st District",
-            quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            stance: "opposed",
-            quoteSource: "Press release, March 7, 2017",
-            quoteLink: "http://robinkelly.house.gov/media-center/press-releases/rep-kelly-releases-a-statement-on-republicans-aca-repeal-bill",
-
+          "name": "Rodney Davis",
+          "img": "/img/rodney.jpg",
+          "party": " Republican",
+          "state": " IL",
+          "district": " 13th District",
+          "quote": "Some members, from both parties, may not want to face the mess that Obamacare has created and what is required to clean it up, but we made a promise to the American people to responsibly fix our health care system and that’s what this bill does.",
+          "quoteSource": "Press release, March 7, 2017",
+          "quoteLink": "http://rodneydavis.house.gov/news/documentsingle.aspx?DocumentID=399253",
+          "stance": "in-favor"
         },
         {
           name: "Dan Lipinski",
@@ -127,7 +126,7 @@ class KeyPlayer extends Component {
           {this.state.keyPlayers.map(rep =>
             <Col xs={3} sm={2}>
               <div className="keyPlayer"
-                style={(rep.name) === name ? {backgroundColor: '#e8e8e8', borderRadius: 6,
+                style={(rep.name) === name ? {backgroundColor: '#e8e8e8', borderRadius: '6%',
               borderColor: '#e8e8e8'} : {borderRadius: 0}}
                 onClick={() => this.updateShownInfo(rep)}>
                 <img src={rep.img} className="thumbnailImage"                />
